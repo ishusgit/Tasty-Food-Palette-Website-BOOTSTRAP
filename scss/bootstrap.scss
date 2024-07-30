@@ -1,0 +1,87 @@
+$font-family:'open-sans',sans-serif;
+$button-radius:30px;
+$button-padding-x:25px;
+$button-padding-y:10px;
+//colors variables
+$primary:rgb(36, 255, 113);
+$secondary:rgb(255, 67, 20);
+$warning:rgba(219, 190, 5, 0.954);
+$light:rgba(72, 72, 72, 0.911);
+$info:rgb(0, 97, 0);
+$danger:rgb(75, 41, 41);
+$dark:#2b3041;
+$black:rgb(255, 0, 132);
+$success:rgb(0, 34, 108);
+$muted:black;
+
+//$zindex-toast:                      1090 !default;
+//$zindex-modal-backdrop:             1050 !default;
+//$zindex-modal:                      1055 !default;
+//$zindex-dropdown:                   1060 !default;
+
+
+
+
+$popover-header-bg:              rgb(229, 195, 255) !default;
+$popover-bg:                        rgb(127, 0, 211)!default;
+$popover-header-color:              rgb(0, 0, 0) !default;
+$popover-body-color:              rgb(255, 255, 255)!default;
+$popover-border-color:              white !default;
+$popover-max-width:                 260px !default;
+$popover-arrow-color:               rgb(160, 43, 255) !important;
+
+
+
+
+$enable-negative-margins:     true !default;
+//breadcrumb
+$breadcrumb-padding-x:              10px !default;
+$breadcrumb-divider-color:          rgb(190, 238, 0) !default;
+$breadcrumb-divider:                quote(">") !default;
+//border-radius
+$border-widths: (
+  1: 1px,
+  2: 2px,
+  3: 3px,
+  4: 4px,
+  5: 5px,
+  6: 6px,
+  7: 7px,
+  8: 8px,
+  9: 9px,
+) !default;
+//spacers
+$spacer: 1rem !default;
+$spacers: (
+  0: 0,
+  1: $spacer * .25,
+  2: $spacer * .5,
+  3: $spacer,
+  4: $spacer * 1.5,
+  5: $spacer * 3,
+  6: $spacer * 6,
+  7: $spacer * 8,
+  8: $spacer * 12,
+) !default;
+
+//button
+$btn-border-radius:$button-radius;
+$btn-border-radius-sm:$button-radius;
+$btn-border-radius-lg:$button-radius;
+$btn-padding-x:$button-padding-x;
+$btn-padding-x-sm:$button-padding-x;
+$btn-padding-x-lg:$button-padding-x;
+$btn-padding-y:$button-padding-y;
+$btn-padding-y-sm:$button-padding-y;
+$btn-padding-y-lg:$button-padding-y;
+
+
+//navbar
+$navbar-padding-y:0.3rem;
+$navbar-toggler-border-radius:10px;
+
+//line-height
+$line-height-base:1.6;
+
+@import '../node_modules/bootstrap/scss/bootstrap.scss';
+

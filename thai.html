@@ -1,0 +1,669 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food website</title>
+    <!--google fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/fontawesome.css">
+</head>
+<style>
+    body,html{
+        padding-top:40px;
+    }
+</style>
+<body>
+    <!--navbar-->
+<div class="container-fluid">
+    <nav class="navbar navbar-expand-xl bg-dark fixed-top py-xl-1 py-md-3 py-sm-2 py-lg-3 py-3 px-2">
+        <div class="container-fluid">
+            <nav aria-label="breadcrumb" class="my-auto about-breadcrumb">
+                <ol class="breadcrumb my-auto d-flex flex-column flex-sm-row">
+                   <li class="breadcrumb-item"><a href="index.html" class="text-decoration-none text-white fw-semibold">Home</a></li>
+                   <li class="breadcrumb-item"><a href="chinese.html" class="text-decoration-none text-white fw-semibold">Chinese-Cuisine</a></li>
+                   <li class="breadcrumb-item active"><a href="thai.html" class="fw-semibold text-warning link-offset-3">Thai-Cuisine</a></li>
+                </ol>
+            </nav>
+            <button class="navbar-toggler bg-white" type="button" data-bs-toggle="collapse" data-bs-target="#navbarExample">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div id="navbarExample" class="collapse navbar-collapse">
+                <div class="border-0 rounded-3 mt-2 mt-xl-0 shadow-xl shadow-0 d-flex flex-column bg-white mx-auto px-lg-4 flex-xl-row justify-content-xl-between align-items-xl-center py-2 justify-content-center align-items-center justify-content-md-start align-items-md-start px-xl-2 mt-md-3 mt-xl-0 d-md-inline-flex d-flex">
+                    <a href="#index.html" class="navbar-brand fw-bold text-primary text-center">
+                        <img src="./images/food-logo-img.png" alt="food-logo" class="img-fluid d-xl-none d-inline-block" width="100">
+                        <span class="h5 text-uppercase">Tasty</span> Food Palette
+                    </a>
+                   <ul class="nav navbar-nav d-lg-flex flex-lg-column flex-xl-row justify-content-between align-items-center ps-md-3">
+                    <li class="nav-item active">
+                        <a href="#thai-breakfast" class="nav-link text-success fw-semibold">Breakfast</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#thai-lunch" class="nav-link text-success fw-semibold">Lunch</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#thai-dinner" class="nav-link text-success fw-semibold">Dinner</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#thai-snacks" class="nav-link text-success fw-semibold">Snacks</a>
+                    </li>
+                </ul>
+                </div>
+                <div class="ms-lg-auto my-3 d-flex flex-row flex-nowrap">
+                    <a href="aboutus.html" class="btn btn-secondary text-white fw-semibold text-center">About Us</a>
+                <a href="#contactus" class="btn btn-info text-white fw-semibold text-center ms-lg-4 ms-2">Contact Us</a>
+            </div>
+            </div>
+        </div>
+    </nav>
+</div>
+   <!--end navbar-->
+   <!--header with bg-->
+<section class="thai" id="thai">
+        <!--carousel-->
+    <div class="container-fluid">
+    <div class="row border">
+    <div class="container-fluid">
+      <div id="carouselchinese" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner rounded rounded-bottom-4 h-100 overflow-visible">
+            <div class="carousel-item active rounded rounded-bottom-4 chinese-item position-relative">
+                <img src="./images/Special-non-veg-img-1.jpg" alt="thai-cuisine" class="w-100 d-block" height="570">
+                <div class="carousel-caption position-absolute top-0 start-50 text-center translate-middle d-block w-50">
+                   <h4 class="fw-bold display-6"></h4>
+                </div>
+            </div>
+            <div class="carousel-item rounded rounded-bottom-4 chinese-item position-relative h-100">
+                <img src="./images/bg-img-9.jpg" alt="chinese-carousel" class="w-100 d-block" height="570">
+                <div class="carousel-caption position-absolute top-50 start-50 translate-middle d-block w-50">
+                   <h4 class="fw-bold display-4"></h4>
+                </div>
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselchinese" data-bs-slide="prev">
+            <span><i class="fa-solid fa-circle-arrow-left text-info fa-2x"></i></span>
+             <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselchinese" data-bs-slide="next">
+             <span><i class="fa-solid fa-circle-arrow-right text-info fa-2x"></i></span>
+             <span class="visually-hidden">Next</span>
+        </button>
+       </div>
+    
+    </div>
+    </div>
+       <!--end carousel-->
+    </div>
+</section>
+   <!--end header with bg--> 
+   <!--thai breakfast-->
+<section class="thai-breakfast mt-lg-6 mt-5 mt-sm-6" id="thai-breakfast">
+    <div class="container-sm container-md">
+        <div class="row">
+            <div class="col-lg-9 offset-lg-1 col-md-12 offset-md-0">
+                <div class="row d-lg-flex flex-lg-row d-flex flex-md-row flex-md-wrap flex-column align-items-center justify-content-center">
+                    <div class="col-lg-7 border-0 col-12 col-md-8 offset-md-0"> 
+                       <div class="text-container ">
+                           <h3 class="fw-bold text-lg-start lh-base">Experience The Vibrant Flavours Of a <strong class="text-secondary">Thai Cuisine </strong>Breakfast at <strong class="text-info">TASTY FOOD PALETTE</strong></h3>
+                           <h6 class="small text-lg-start fw-semibold text-success text-center lh-base mt-4">
+                            We invite you to start your day with the delightful and celebration of trational receipes and fresh ingredients, offering energizing way to begin your morning. our Thai Breakfast selection promises to satisfy your cravings, memorable culinary experience.
+                           </h6>
+                       </div>
+                    </div>
+                    <div class="col-lg-4 text-center offset-lg-0 col-12 offset-0 col-md-4 mt-4 mt-lg-0 border-0 thai-breakimg">
+                            <img src="./images/thai-breakfast-main-img.png" alt="thai-breakfst" width="380">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--thai breakfast-menu-->
+    <div class="container-fluid mt-6 mt-lg-6 mt-sm-5 container-sm">
+        <div class="row">
+            <div class="col-lg-9 col-10 offset-1 col-sm-12 col-md-12 offset-md-0 offset-sm-0 offset-lg-0 py-lg-4 pt-2 pb-5 py-sm-4 thai-breakmenu thai-break-container rounded-3 rounded-2 shadow-lg d-flex flex-column flex-sm-row flex-sm-wrap flex-md-row flex-md-nowrap flex-lg-nowrap">
+                <div class="row d-flex flex-column flex-sm-row flex-sm-wrap flex-md-row justify-content-sm-center gap-sm-5 align-items-sm-center flex-md-nowrap gap-0 gap-md-5 gap-lg-5 justify-content-md-center align-items-md-center align-items-lg-start justify-content-lg-center flex-lg-nowrap px-lg-0 mx-sm-auto mx-md-auto mx-lg-auto">
+                <div class="col-lg-4 offset-lg-0 col-sm-5 offset-sm-0 col-md-4 offset-md-0 shadow-lg-0 shadow col-10 offset-1 mt-5 mt-sm-3 mt-md-0 bg-white card-thaibreakfast-one rounded-5 position-relative">
+                       <div class="image-container d-flex justify-content-center">
+                        <img src="./images/Thai-starter-img-2.png" alt="thai-breakfast-one" width="100">
+                        </div>
+                        <div class="text-container text-center">
+                        <h5 class="text-black fw-semibold text-nowrap">Rice Porridge</h5>
+                        <h6 class="fw-semibold mt-3 text-danger">Price: $25</h6>
+                        <a href="#" class="mt-2 mb-lg-0 mb-5 h6 text-center fw-semibold btn btn-info text-white px-3 rounded-3 py-2 mb-lg-5">Buy Now</a>
+                        </div>
+                        <div class="add-icon position-absolute top-100 bg-success px-2 py-1 start-50 translate-middle rounded-circle">
+                            <i class="fa-solid fa-cart-plus text-white"></i>
+                        </div>    
+                </div>
+                <div class="col-lg-4 offset-lg-0 border col-sm-5 offset-sm-0 col-md-4 offset-md-0 shadow-lg-0 shadow col-10 offset-1 mt-5 mt-sm-3 mt-md-0 mt-lg-0 bg-white card-thaibreakfast-two rounded-5 position-relative">
+                    <div class="image-container d-flex justify-content-center">
+                     <img src="./images/Thai-starter-img-1.png" alt="thai-breakfast-two" width="112">
+                     </div>
+                     <div class="text-container text-center">
+                     <h5 class="text-warning fw-semibold">Rice Noodle</h5>
+                     <h6 class="fw-semibold mt-3 text-danger">Price: $32</h6>
+                     <a href="#" class="mt-2  mb-lg-0 mb-5 h6 text-center fw-semibold btn btn-warning text-success px-3 rounded-3 py-2 mb-lg-5">Buy Now</a>
+                     </div> 
+                     <div class="add-icon position-absolute top-100 bg-success px-2 py-1 start-50 translate-middle rounded-circle">
+                        <i class="fa-solid fa-cart-plus text-white"></i>
+                    </div>   
+                </div>
+                <div class="col-lg-4 shadow-lg-0  offset-sm-0 col-sm-5 col-md-4 offset-md-0 shadow col-10 offset-1 bg-white offset-lg-0 mt-5 mt-md-0 mt-sm-4 rounded-5 pb-sm-2 pb-md-0 mt-lg-0 position-relative card-thaibreakfast-three">
+                    <div class="image-container d-flex justify-content-center">
+                     <img src="./images/Thai-starter-img-3.png" alt="thai-breakfast-three" width="97">
+                     </div>
+                     <div class="text-container text-center">
+                     <h5 class="text-secondary fw-semibold">Coco Pancake</h5>
+                     <h6 class="fw-semibold mt-3 text-danger">Price: $16</h6>
+                     <a href="#" class="mt-2 h6 text-center fw-semibold btn btn-secondary text-primary px-3 rounded-3 py-2 mb-lg-5 mb-5">Buy Now</a>
+                     </div> 
+                     <div class="add-icon position-absolute top-100 bg-success px-2 py-1 start-50 translate-middle rounded-circle">
+                        <i class="fa-solid fa-cart-plus text-white"></i>
+                    </div>   
+                </div>
+            </div>
+            </div>
+            <div class="col-lg-3 offset-lg-0 col-10 offset-1 mt-lg-0 d-none d-lg-flex mt-4 thaibreakfastmenuimg">
+                <img src="./images/thai-breakfast-menu-img.png" alt="thai-breakfast-menu-img" height="380" width="280" >
+            </div>
+        </div>
+    </div>
+    <!--end thai breakfast-menu-->
+</section>
+   <!--end thai breakfast-->
+   <!--thai lunch-->
+   <section class="thai-lunch mt-5 mt-sm-6 mt-lg-7" id="thai-lunch">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-10 offset-lg-1 col-12 offset-0 col-md-12 offset-md-0">
+                <div class="row d-lg-flex flex-lg-row d-md-flex flex-md-row align-items-center flex-column">
+                <div class="col-lg-5 col-12 offset-0 col-md-5 order-md-2 order-lg-1 d-flex justify-content-center order-2 mt-4 mt-lg-0 thai-lunch-main">
+                    <img src="./images/Chinese-lunch-img-2.jpg" alt="thai-lunch"class="border border-7 border-warning rounded-2 ms-md-5 ms-0 ms-lg-0" width="400">
+                </div>
+                <div class="col-lg-6 offset-lg-1 offset-0 col-md-7 offset-md-0 order-md-1 col-12 order-lg-2 order-1">
+                    <div class="text-container">
+                        <h3 class="fw-bold text-center lh-base">Savor the Exotic Flavors of <strong class="text-warning">Thai Lunch </strong>at <strong class="text-info">TASTY FOOD PALETTE</strong></h3>
+                        <h6 class="small fw-semibold text-danger text-center lh-base mt-4">
+                         We bring the vibrant and diverse flvors of Thailand to midday meal. our thai lunch menu offers a delightful array of dishes that capture the essence of Thai cuisine, from bold and spicy curries to fresh and zesty salads.
+                        </h6>
+                    </div>  
+                </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--thai lunch menu-->
+    <div class="container mt-6 mt-md-6">
+        <div class="row d-flex flex-column flex-md-row justify-content-md-center justify-content-lg-start">
+            <div class="col-lg-10 offset-lg-1 col-10 offset-1 col-sm-10 offset-sm-1 col-md-12 offset-md-0">
+                <div class="row d-flex flex-column flex-md-row flex-md-wrap justify-content-md-center align-items-md-center">
+                    <div class="col-lg-4 col-12 col-sm-10 offset-sm-1 col-md-6 offset-md-0">
+                        <div class="card thailunch-one  border-0 rounded-3 shadow">
+                            <div class="image-container d-flex justify-content-center mt-2">
+                            <img src="./images/Thai-lunch-img-1.jpg" alt="thai-lunch-one" class="rounded-circle border border-5" width="150" height="150">
+                            </div>
+                            <div class="card-body">
+                                <h5 class="text-center fw-bold card-title text-secondary">Thai Noodles</h5>
+                                <div class="localname d-flex flex-sm-row flex-column justify-content-sm-around justify-content-lg-between mt-4 mt-sm-2 align-items-center align-items-md-center align-items-lg-center mt-lg-4">
+                                <h6 class="fw-medium card-subtitle text-muted small lh-base">LCN : PAD THAI</h6>
+                                <a href="#" class="btn btn-success text-white rounded-1 mt-lg-0 mt-3 py-2 px-3 text-nowrap">Price: $47</a>
+                                </div>
+                                <h6 class="small card-text fw-semibold lh-base text-dark mt-3">
+                                    Made with stir-fried rice noodles, eggs, tofu, and shrimp, chicken, or vegetables with tangy tamarind sause, garnished with peanuts, lime, fresh-herbs of your choice.
+                                </h6>
+                                <div class="rating text-center mt-2 mt-sm-0 mt-md-0 mt-lg-0">
+                                    <span><i class="fa-solid fa-star text-warning"></i></span>
+                                    <span><i class="fa-solid fa-star text-warning"></i></span>
+                                    <span><i class="fa-solid fa-star text-warning"></i></span>
+                                    <span><i class="fa-solid fa-star text-warning"></i></span>
+                                    <span><i class="fa-solid fa-star text-warning"></i></span>
+                                </div>
+                                <div class="buttons d-flex flex-sm-row flex-column justify-content-lg-between justify-content-sm-around mt-3 align-items-center align-items-sm-center align-items-lg-start">
+                                    <a href="#" class="btn btn-info text-white px-sm-4 py-sm-2 px-lg-3 py-lg-2 px-5 py-2 rounded-3">Buy Now</a>
+                                    <a href="#" class="btn btn-secondary text-white px-sm-4 py-sm-2 px-lg-3 py-lg-2 px-5 py-2 rounded-3 mt-lg-0 mt-3 mt-sm-0">Add Cart</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-12 col-sm-10 offset-sm-1 col-md-6 offset-md-0 mt-md-0 mt-lg-0 mt-5">
+                        <div class="card thailunch-two border-0 rounded-3 shadow">
+                            <div class="image-container d-flex justify-content-center mt-2">
+                            <img src="./images/Thai-lunch-img-2.jpg" alt="thai-lunch-one" class="rounded-circle border border-5" width="150" height="150">
+                            </div>
+                            <div class="card-body">
+                                <h5 class="text-center fw-bold card-title text-black">Sushi Green Curry</h5>
+                                <div class="localname d-flex flex-sm-row flex-column justify-content-sm-around justify-content-lg-between mt-4 mt-sm-2 align-items-center align-items-md-center align-items-lg-center mt-lg-4">
+                                <h6 class="fw-medium card-subtitle text-muted small lh-base text-nowrap">GAEGKEO WAN</h6>
+                                <a href="#" class="btn btn-danger text-white rounded-1 mt-lg-0 mt-3 py-2 px-3 text-nowrap">Price: $35</a>
+                                </div>
+                                <h6 class="small card-text fw-semibold lh-base text-dark mt-3">
+                                    Our Sushi pieces of chicken or tofu simmered in a Thai basil, and fresh vegetables. Dish is wrapped with steamed jasmine rice, making it a hearty delicious lunch.
+                                </h6>
+                                <div class="rating text-center mt-2 mt-sm-0 mt-md-0 mt-lg-0">
+                                    <span><i class="fa-solid fa-star text-warning"></i></span>
+                                    <span><i class="fa-solid fa-star text-warning"></i></span>
+                                    <span><i class="fa-solid fa-star text-warning"></i></span>
+                                    <span><i class="fa-solid fa-star text-warning"></i></span>
+                                    <span><i class="fa-solid fa-star text-warning"></i></span>
+                                </div>
+                                <div class="buttons d-flex flex-sm-row flex-column justify-content-lg-between justify-content-sm-around mt-3 align-items-center align-items-sm-center align-items-lg-start">
+                                    <a href="#" class="btn btn-info text-white rounded-3 px-lg-3 py-lg-2 px-5 py-2 px-sm-4 py-sm-2 ">Buy Now</a>
+                                    <a href="#" class="btn btn-warning text-white rounded-3 px-lg-3 py-lg-2 px-5 py-2 mt-lg-0 mt-3 mt-sm-0 px-sm-4 py-sm-2">Add Cart</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-12 col-sm-10 offset-sm-1 col-md-6 offset-md-0 mt-lg-0 mt-5">
+                        <div class="card border-0 thailunch-three rounded-3 shadow">
+                            <div class="image-container d-flex justify-content-center mt-2">
+                            <img src="./images/chinese-main-lunch-img-3-.jpg" alt="thai-lunch-one" class="rounded-circle border border-5" width="150" height="150">
+                            </div>
+                            <div class="card-body">
+                                <h5 class="text-center fw-bold card-title text-primary">Green Papaya Salad</h5>
+                                <div class="localname d-flex flex-sm-row flex-column justify-content-sm-around justify-content-lg-between mt-4 mt-sm-2 align-items-center align-items-md-center align-items-lg-center mt-lg-4">
+                                <h6 class="fw-medium card-subtitle text-light small lh-base">LCN : SOM TUM</h6>
+                                <a href="#" class="btn btn-secondary text-white rounded-1 mt-lg-0 mt-3 py-2 px-3 text-nowrap">Price: $15</a>
+                                </div>
+                                <h6 class="small card-text text-white fw-semibold lh-base mt-3">
+                                    Som Tum is a refreshing green papaya salad with shredded green papaya, tomatoes, green beans, and peanuts, all tossed in a spicy lime dressing and seasoning.
+
+                                </h6>
+                                <div class="rating text-center mt-2 mt-sm-0 mt-md-0 mt-lg-0">
+                                    <span><i class="fa-solid fa-star text-warning"></i></span>
+                                    <span><i class="fa-solid fa-star text-warning"></i></span>
+                                    <span><i class="fa-solid fa-star text-warning"></i></span>
+                                    <span><i class="fa-solid fa-star text-warning"></i></span>
+                                    <span><i class="fa-solid fa-star text-warning"></i></span>
+                                </div>
+                                <div class="buttons d-flex flex-sm-row flex-column justify-content-lg-between justify-content-sm-around mt-3 align-items-center align-items-sm-center align-items-lg-start">
+                                    <a href="#" class="btn btn-info text-white rounded-3 px-sm-4 py-sm-2 px-lg-3 py-lg-2 px-5 py-2 ">Buy Now</a>
+                                    <a href="#" class="btn btn-success text-white rounded-3 px-sm-4 py-sm-2 px-lg-3 py-lg-2 px-5 py-2 mt-lg-0 mt-3 mt-sm-0">Add Cart</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--end thai lunch menu-->
+   </section>
+   <!--end thai lunch-->
+   <!--thai dinner-->
+   <section class="thai-dinner mt-5 mt-lg-7 mt-sm-6 mt-md-6" id="thai-dinner">
+    <div class="container-sm container-md">
+        <div class="row">
+            <div class="col-lg-10 offset-lg-1 col-12 offset-0 col-md-12 offset-md-0">
+                <div class="row d-flex flex-lg-row flex-column align-items-center flex-md-row">
+                    <div class="col-lg-7 col-11 col-md-7">
+                       <div class="text-container">
+                           <h3 class="fw-bold text-center lh-base">Indulge in an Exquisite  <strong class="text-black">Thai Cuisine </strong>Dinner at <strong class="text-info">TASTY FOOD PALETTE</strong></h3>
+                           <h6 class="small fw-semibold text-dark text-center lh-base mt-4">
+                            At TASTY FOOD PALETTE, We invite you to experience the rich and vibrant flavors of Thai Cuisine with our carefully curated dinner menu. Whether you're looking to enjoy a romanctic dinner for two, a family gathering, or a night out with friends, Our dishes are crafted with the finest ingedients cooking techniques, bringing the essence of Thailand to your table.
+                           </h6>
+                       </div>
+                    </div>
+                    <div class="col-lg-5 offset-lg-0 col-12 col-md-5 offset-md-0 d-flex justify-content-center justify-content-lg-start offset-0 thai-dinner-img mt-4 mt-lg-0">
+                            <img src="./images/thai-dinner-main-img.png" alt="thai-dinner" class="img-fluid" width="400">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--thai dinner menu-->
+    <div class="container mt-lg-7 mt-5 mt-md-6 mb-md-0">
+        <div class="row">
+           <div class="col-lg-10 offset-lg-1 col-10 offset-1 col-md-12 offset-md-0">
+            <div class="row d-flex flex-column flex-lg-row justify-content-center align-items-center align-items-lg-start justify-content-lg-start flex-md-row flex-md-wrap">
+                <div class="col-lg-4 col-10 col-md-6 offset-md-0">
+                    <div class="card">
+                        <div class="image-container">
+                            <img src="./images/Thai-dinner-img-2.jpg" alt="thai_dinner_one" class="card-img-top" height="250">
+                        </div>
+                        <div class="card-footer bg-warning">
+                            <a href="#thai-dinner-one" class="text-decoration-none h6 text-center fw-semibold text-white" data-bs-toggle="collapse"  aria-control="thai-dinner-one" aria-expanded="false">See the Menu</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-10 mt-4 mt-md-0 mt-lg-0 col-md-6 offset-md-0">
+                    <div class="card border-0 rounded-4">
+                        <div class="image-container">
+                            <img src="./images/Thai-dinner-img-3.jpg" alt="thai-dinner-two" class="card-img-top" height="250">
+                        </div>
+                        <div class="card-footer bg-secondary">
+                            <a href="#thai-dinner-two" class="text-decoration-none h6 text-center fw-semibold text-white" data-bs-toggle="collapse"  aria-control="thai-dinner-two" aria-expanded="false">See the Menu</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-10 mt-4 mt-md-5 mt-lg-0 col-md-6 offset-md-0">
+                    <div class="card border-0 rounded-4">
+                        <div class="image-container">
+                            <img src="./images/Thai-dinner-img-1.jpg" alt="thai-dinner-three" class="card-img-top" height="250">
+                        </div>
+                        <div class="card-footer bg-info">
+                            <a href="#thai-dinner-three" class="text-decoration-none h6 text-center fw-semibold text-white" aria-control="thai-dinner-three" aria-expanded="false" >See the Menu</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+           </div>
+        </div>
+        <div class="container-fluid mt-lg-6 mt-4 mt-md-5">
+        <div class="row">
+           <div class="col-lg-12 col-10 col-sm-12 offset-sm-0 offset-1 col-md-12 offset-md-0">
+                <div class="row d-flex flex-column flex-lg-row flex-md-row flex-md-wrap flex-lg-nowrap">
+                    <div class="col-lg-3 offset-lg-0 col-sm-10 offset-sm-1 col-md-5 offset-md-0">
+                          <div class="collapse collapse-horizontal show fade" id="thai-dinner-one">
+                            <div class="card border-0 rounded-3 shadow">
+                                <div class="card-header bg-black d-flex flex-row justify-content-between align-items-center">
+                                    <div class="h5 text-white fw-semibold">Massaman Curry</div>
+                                    <button class="btn-close btn-close-white btn"></button>
+                                </div>
+                                <div class="card-body">
+                                    <h5 class="card-subtitle fw-semibold text-danger">Price: $20</h5>
+                                    <h6 class="fw-semibold card-text mt-3 lh-base small text-muted">
+                                     <strong class="text-danger mb-3 text-decoration-underline">Rich and Savory</strong><br>
+                                     Massaman curry is fragrant flavorful dish made with tender pieces of <strong class="text-info fw-medium">Chicken, simmered in a rice coconut milk curry with potatoes. onions, and peanuts.</strong> This mild curry is perfect those who enjoy a sweet and savory flavor.
+                                    </h6>
+                                </div>
+                                <div class="card-footer bg-dark d-flex flex-row justify-content-around align-items-center">
+                                    <a href="#" class="btn btn-primary text-white text-center rounded-2 py-lg-1 px-lg-2 py-1 px-2">Buy Now</a>
+                                    <a class="btn btn-warning text-center text-white rounded-2 py-lg-1 px-lg-2 py-1 px-2">Not Now</a>
+                                </div>
+                            </div>
+                            </div>
+                    </div>
+                  <div class="col-lg-6 col-10 offset-1 col-sm-12 offset-sm-0 offset-lg-0 col-md-7 offset-md-0 thaidinnertwo mt-lg-0 mt-4 mt-sm-5 mt-md-0">
+                    <div class="collapse collapse-horizontal card h-100 d-sm-flex flex-sm-row border-0 rounded-2 shadow fade show" id="thai-dinner-two" style="height:305px;">
+                        <div class="row g-0">
+                            <div class="col-lg-5 col-sm-5 thaidinnerimgthree">
+                                <img src="./images/Thai-dinner-img-3.jpg" alt="thai-dinner-two" height="200" class="img-fluid w-100 h-100 rounded-end-4 rounded-start-2">
+                            </div>
+                            <div class="col-lg-7 col-sm-7">
+                                <div class="card-body py-md-3 py-lg-5 pt-3 w-100">
+                                        <h6 class="h5 fw-semibold card-title text-info">Crispy Fish Chilli Sauce</h6>
+                                        <div class="mame-fav flex-row d-flex justify-content-around align-items-center mt-3">
+                                            <h6 class="fw-medium text-muted">Pla Rad Prik</h6>
+                                            <i class="fa-solid fa-heart text-secondary"></i>
+                                        </div> 
+                                        <div class="price-rating flex-row d-flex justify-content-between align-items-center mt-2">
+                                            <h6 class="fw-semibold text-black">Price: $23</h6>
+                                            <div class="ratings">
+                                                <span><i class="fa-solid fa-star text-warning"></i></span>
+                                                <span><i class="fa-solid fa-star text-warning"></i></span>
+                                                <span><i class="fa-solid fa-star text-warning"></i></span>
+                                                <span><i class="fa-solid fa-star text-warning"></i></span>
+                                            </div>
+                                        </div> 
+                                        <h6 class="card-text lh-base fw-medium text-muted small mt-2 d-none d-sm-block">
+                                            Pla Rad Prik fried fish topped with a tangy and spicy chilli sauce. The combination of the crispy fish and the sauce texures, flavors delight taste buds.
+                                        </h6>
+                                        <div class="footers d-flex flex-sm-row justify-content-between align-items-center mt-3 mt-lg-4 flex-column mb-0">
+                                            <a href="#" class="btn btn-success text-white text-center py-2 px-3 rounded-2 py-md-1 px-md-2 py-lg-2 px-lg-3">Buy Now</a>
+                                            <a href="#" class="btn btn-secondary mt-3 mt-sm-0 text-white text-center py-md-1 px-md-2 px-3 py-2 py-lg-2 px-lg-3 rounded-2">Add Cart</a>
+                                        </div>      
+                                </div>
+                            </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-3 offset-lg-0 col-12 offset-0 col-sm-10 offset-sm-1 col-md-5 offset-md-0 mt-lg-0 mt-4 mt-sm-5 mt-md-2">
+                    <div class="collapse collapse-horizontal show fade" id="thai-dinner-three">
+                      <div class="card border-0 rounded-3 shadow">
+                          <div class="card-header bg-info d-flex flex-row justify-content-between align-items-center">
+                              <div class="h5 text-white fw-semibold">Drunken Noodles</div>
+                              <button class="btn-close btn-close-white btn"></button>
+                          </div>
+                          <div class="card-body">
+                              <div class="price-name d-flex flex-row justify-content-between align-items-center">
+                                <h5 class="card-subtitle fw-semibold text-warning">Price: $34.55</h5>
+                                <h6 class="text-muted fw-semibold">Pad Kee Mao</h6>
+                              </div>
+                              <h6 class="fw-semibold card-text mt-3 lh-base small text-muted">
+                               <strong class="text-danger mb-3 text-decoration-underline">Bold and Spicy</strong><br>
+                               Stir fried noodles dish made with<strong class="text-success fw-medium">Rice noodles, fresh balls, bell pepers, and choice of your protein.</strong> This dish is tossed in savory sauce with hint of chilli, making it a favorite for spice lovers..
+                              </h6>
+                          </div>
+                          <div class="card-footer bg-dark d-flex flex-row justify-content-around align-items-center">
+                              <a href="#" class="btn btn-primary text-white text-center rounded-2 py-1 px-2 py-lg-1 px-lg-2">Buy Now</a>
+                              <a class="btn btn-warning text-center text-white rounded-2 py-lg-1 px-lg-2 py-1 px-2">Not Now</a>
+                          </div>
+                      </div>
+                      </div>
+              </div>
+                </div>
+            </div>
+        </div>
+        </div>        
+    </div>
+    <!--end thai dinner menu-->
+   </section>
+   <!--end thai dinner-->
+   <!--thai snacks-->
+   <section class="thai-snacks mt-lg-6 mt-4 mt-sm-5 mt-md-4" id="thai-snacks">
+    <div class="container-sm">
+        <div class="row d-flex flex-column flex-lg-row justify-content-center align-items-center justify-content-lg-start align-items-lg-start flex-md-row flex-md-wrap">
+            <div class="col-lg-5 col-12 col-md-4 thaisnacksimg d-flex justify-content-center justify-content-lg-start align-items-lg-center">
+                <img src="./images/thai-snacks-main-img.png" alt="thai-snacks-main" class="img-fluid">
+            </div>
+            <div class="col-lg-7 col-11 mt-lg-2 mt-xl-6 mt-4 col-md-8 offset-0 thai-snacks-main">
+                <div class="text-container ms-md-4 ms-0">
+                    <h3 class="fw-bold text-center lh-base">Delight in the Authentic Flavors of <strong class="text-black">Thai Cuisine </strong>Snacks at <strong class="text-info">TASTY FOOD PALETTE</strong></h3>
+                    <h6 class="small fw-semibold text-success text-center lh-base mt-4">
+                     At TASTY FOOD PALATEE, we offer a delightful selection of Thai snacks that are perfect for any time of the day. Our Thai snacks capture the essence of Thailand's vibrant street food culture. from crispy and savory bites to sweet and chewy treats.
+                    </h6>
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid mt-lg-n6 mt-5 mt-sm-6">
+        <div class="row border-0">
+            <div class="col-lg-12 col-8 offset-2 col-sm-12 offset-sm-0 col-md-12 offset-md-0 offset-lg-0">
+                <div class="row d-flex flex-lg-nowrap flex-sm-row flex-sm-wrap gap-5 gap-lg-5 flex-md-row flex-md-wrap  flex-lg-nowrap justify-content-sm-center align-items-sm-center justify-content-md-around align-items-md-center justify-content-lg-start align-items-lg-center">
+                <div class="col-lg-3 col-sm-5 col-md-5 thaisnack-one offset-lg-2 border-0 rounded-3 card position-relative py-3 shadow-lg">
+                    <div class="row g-0">
+                        <div class="col-lg-3 col-3 col-sm-4">
+                            <img src="./images/thai-snacks-img-1.png" alt="thai-snacks-one" width="80" height="80" class=" position-absolute top-0 start-0 translate-middle">
+                        </div>
+                        <div class="col-lg-9 pe-4 col-9 col-sm-8 pe-sm-2 pe-lg-2">
+                            <i class="fa-solid fa-cart-plus text-secondary float-end"></i>
+                            <h6 class="mt-4 fw-bold text-white">Orange Cake</h6>
+                            <h6 class="fw-bold small text-info mt-3">
+                                <i class="fa-solid fa-star text-warning me-2"></i>
+                                4.6
+                            </h6>
+                            <div class="price-buy d-flex flex-row justify-content-between align-items-center mt-3">
+                                <h6 class="fw-bold text-white">$7.64</h6>
+                                <a href="#" class="btn btn-dark rounded-3 py-1 px-3">
+                                    <i class="fa-solid fa-plus text-white fs-6"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>   
+            </div>
+            <div class="col-lg-3 col-sm-5 col-md-5 thaisnack-two border-0 rounded-3 card position-relative py-3 shadow-lg">
+                <div class="row g-0">
+                    <div class="col-lg-3 col-3 col-sm-4">
+                        <img src="./images/thai-snacks-img-2.png" alt="thai-snacks-two" width="70" height="70" class=" position-absolute top-0 start-0 translate-middle">
+                    </div>
+                    <div class="col-lg-9 pe-4 col-9 col-sm-8 pe-sm-2 pe-lg-2">
+                        <i class="fa-solid fa-cart-plus text-secondary float-end"></i>
+                        <h6 class="mt-4 fw-bold text-white">Strawberry</h6>
+                        <h6 class="fw-bold small text-info mt-3">
+                            <i class="fa-solid fa-star text-warning me-2"></i>
+                            4.4
+                        </h6>
+                        <div class="price-buy d-flex flex-row justify-content-between align-items-center mt-3">
+                            <h6 class="fw-bold text-white">$9.25</h6>
+                            <a href="#" class="btn btn-dark rounded-3 py-1 px-3">
+                                <i class="fa-solid fa-plus text-white fs-6"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>   
+        </div>
+        <div class="col-lg-3 col-sm-5 col-md-5 thaisnack-three border-0 rounded-3 card position-relative py-3 shadow-lg">
+            <div class="row g-0">
+                <div class="col-lg-3 col-3 col-sm-4">
+                    <img src="./images/thai-snack-img-3.png" alt="thai-snacks-three" width="80" height="90" class=" position-absolute top-0 start-0 translate-middle">
+                </div>
+                <div class="col-lg-9 pe-4 col-9 col-sm-8 pe-sm-2 pe-lg-2">
+                    <i class="fa-solid fa-cart-plus text-secondary float-end"></i>
+                    <h6 class="mt-4 fw-bold text-white">Berry Cheese</h6>
+                    <h6 class="fw-bold small text-info mt-3">
+                        <i class="fa-solid fa-star text-warning me-2"></i>
+                        4.8
+                    </h6>
+                    <div class="price-buy d-flex flex-row justify-content-between align-items-center mt-3">
+                        <h6 class="fw-bold text-white">$11.87</h6>
+                        <a href="#" class="btn btn-dark rounded-3 py-1 px-3">
+                            <i class="fa-solid fa-plus text-white fs-6"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>   
+    </div>
+            </div>
+            </div>
+            </div>
+        </div>
+    </div>
+   </section>
+   <!--end thai snacks-->
+   <!--pagination-->
+<div class="container-fluid my-6">
+    <nav aria-label="page navigation example">
+        <ul class="pagination pagination-md pagination justify-content-lg-end justify-content-center">
+            <li class="page-item">
+                <a href="chinese.html" class="page-link" aria-label="previous">
+                    <span aria-hidden="true"><i class="fa-solid fa-angles-left text-secondary"></i></span>
+                </a>
+            </li>
+            <li class="page-item">
+                <a href="index.html" class="page-link" >
+                    1
+                </a>
+            </li>
+            <li class="page-item">
+                <a href="chinese.html" class="page-link">
+                    2
+                </a>
+            </li>
+            <li class="page-item">
+                <a href="thai.html" class="page-link bg-info border-info fw-semibold text-white active">
+                    3
+                </a>
+            </li>
+            <li class="page-item">
+                <a href="aboutus.html" class="page-link">
+                    4
+                </a>
+            </li>
+            <li class="page-item">
+                <a href="aboutus.html" class="page-link">
+                    <span aria-hidden="true"><i class="fa-solid fa-angles-right text-secondary"></i></span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+</div>
+<!--end-pagination-->
+    <!--footer-contact us-->
+    <footer class="contactus contact_img pt-4 pb-3 position-relative" id="contactus">
+        <img src="./images/lemon-footer-img.png" alt="strawberry-footer-img" class="position-absolute top-0 end-0" width="180">
+        <img src="./images/strawbery-footer-img.png" alt="lemon-footer-img" class="position-absolute top-0 start-0" width="180">
+      <div class="container-fluid position-relative">
+        <div class="row d-flex flex-lg-row flex-lg-wrap flex-column">
+        <div class="col-lg-12 col-xl-10 offset-xl-1 offset-lg-0 col-sm-10 offset-sm-1">
+        <div class="row">
+              <div class="col-lg-4 col-12 col-md-10 offset-md-1 offset-lg-0 text-center border">
+                <h3 class="fw-semibold text-black fs-4 mb-4">Contact Us</h3>
+                <form action="">
+                 <div class="mb-4">
+                    <input type="text" name="name" id="name" class="form-control shadow rounded-3 border-0 py-2 px-4" placeholder="Enter Your Name">
+                 </div>
+                 <div class="mb-4">
+                    <input type="email" name="email" id="email" class="form-control shadow rounded-3 border-0 py-2 px-4" placeholder="Enter Your Email">
+                 </div>
+                 <div class="mb-4">
+                    <textarea name="textarea" id="textarea" class="form-control shadow rounded-3 border-0 py-3 px-4">Write a Query Here!</textarea>
+                 </div>
+                 <div class="mb-4">
+                    <input type="button" value="Submit" class="btn btn-info text-white fw-semibold rounded-4">
+                 </div>
+                </form>
+              </div>
+              <div class="col-lg-4 col-xl-5 border col-md-10 offset-md-1 offset-lg-0">
+                <h3 class="fw-semibold text-black fs-4 mb-4 text-center">Tasty Food Palette</h3>
+                <h6 class="small fw-medium lh-base text-success text-center">At this restaurant, we are always eager to hear from our customers. Your feedbck is invaluable and helps us to continously improve.</h6>
+                <ul class="list-unstyled contact-list mt-3 mt-lg-4 d-flex gap-2 flex-column align-items-center justify-content-center flex-lg-row justify-content-lg-between flex-lg-wrap">
+                    <li class="list-item active"><a href="index.html" class="text-decoration-none text-info fw-semibold h6">Home</a></li>
+                    <li class="list-item"><a href="index.html" class="text-decoration-none text-info fw-semibold h6">Indian-Cuisine</a></li>
+                    <li class="list-item"><a href="chinese.html" class="text-decoration-none text-info fw-semibold h6">Chinese-Cuisine</a></li>
+                    <li class="list-item"><a href="thai.html" class="text-decoration-none text-info fw-semibold h6">Thai-Cuisine</a></li>
+                    <li class="list-item"><a href="index.html" class="text-decoration-none text-info fw-semibold h6">Special</a></li>
+                    <li class="list-item"><a href="index.html" class="text-decoration-none text-info fw-semibold h6">Dinning</a></li>
+                    <li class="list-item"><a href="index.html" class="text-decoration-none text-info fw-semibold h6">Services</a></li>
+                    <li class="list-item"><a href="aboutus.html" class="text-decoration-none text-info fw-semibold h6">About Us</a></li>
+                </ul>
+                <ul class="list-unstyled">
+                    <li class="list-item d-flex align-items-center">
+                        <i class="fa-solid fa-location-dot text-secondary me-3"></i>
+                        <h6 class="small fw-semibold text-danger lh-base">
+                            Tasty Food Palette Restaurant
+                            MNO street, RT State-754632.
+                        </h6>
+                    </li>
+                    <li class="list-item d-flex align-items-center">
+                        <i class="fa-solid fa-envelope text-secondary me-3"></i>
+                        <h6 class="small lh-base text-danger fw-semibold">
+                            tastyfoodpaletteres@gmail.com
+                        </h6>
+                    </li>
+                    <li class="list-item d-flex align-items-center">
+                        <i class="fa-solid fa-phone text-secondary me-3"></i>
+                        <h6 class="small fw-semibold lh-base text-danger">
+                            +0987654321
+                        </h6>
+                    </li>
+                </ul>
+                <div class="col-8 offset-2">
+                <ul class="list-unstyled mt-3 mb-4 rounded-2 shadow-lg d-flex justify-content-around py-2">
+                    <li class="list-item">
+                        <i class="fa-brands fa-facebook fa-2x text-success"></i>
+                    </li>
+                    <li class="list-item">
+                        <i class="fa-brands fa-instagram fa-2x text-black"></i>
+                    </li>
+                    <li class="list-item">
+                        <i class="fa-brands fa-twitter fa-2x text-info"></i>
+                    </li>
+                    <li class="list-item">
+                        <i class="fa-brands fa-linkedin fa-2x text-success"></i>
+                    </li>
+                </ul>
+            </div>
+              </div>
+              <div class="col-lg-4 col-xl-3 border-end-0 d-flex justify-content-xl-start">
+                <div class="image-container float-lg-end text-center">
+                    <img src="./images/Chinese-salad-img-3.png" alt="footer-img" height="300">
+                </div>
+              </div>
+            </div>
+        </div>
+        </div>
+    </div>
+    </footer>
+    <!--end footer contact us-->
+<!--back to top btn-->
+<button id="back-to-top" class="back-to-top-circle">
+    <i class="fa-solid fa-angles-up text-white"></i>
+   </button>
+   <!--end back to top btn-->
+   <!--scripts starts-->
+    <script src="js/script.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

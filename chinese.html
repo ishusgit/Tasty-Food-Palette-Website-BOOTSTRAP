@@ -1,0 +1,617 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food website</title>
+    <!--google fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/fontawesome.css">
+    <!--<style>
+        .custom-class{
+    --bs-popover-header-bg:$success !important;
+    --bs-popover-body-bg:teal;
+}
+    </style>-->
+    <style>
+        body,html{
+            padding-top:40px;
+        }
+    </style>
+</head>
+<body>
+    <!--navbar-->
+<div class="container-fluid">
+    <nav class="navbar navbar-expand-xl bg-dark fixed-top py-xl-1 py-md-2 py-sm-2 py-3 px-2">
+        <div class="container-fluid">
+            <nav aria-label="breadcrumb" class="my-auto about-breadcrumb">
+                <ol class="breadcrumb my-auto d-flex flex-row ms-2 ms-lg-0">
+                   <li class="breadcrumb-item"><a href="index.html" class="text-decoration-none text-white fw-semibold">Home</a></li>
+                   <li class="breadcrumb-item active"><a href="chinese.html" class="fw-semibold text-warning link-offset-3">Chinese-Cuisine</a></li>
+                </ol>
+            </nav>
+            <button class="navbar-toggler bg-white" type="button" data-bs-toggle="collapse" data-bs-target="#navbarExample">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div id="navbarExample" class="collapse navbar-collapse">
+                <div class="d-flex flex-column mx-auto px-lg-4 px-xl-0 flex-xl-row justify-content-xl-between align-items-xl-center py-2 justify-content-center align-items-center justify-content-md-start align-items-md-start px-xl-2 mt-md-3 mt-xl-0 d-md-inline-flex">
+                    <a href="#index.html" class="navbar-brand fw-bold text-primary mx-lg-0 ms-xl-4 ms-sm-3 text-center ms-md-0">
+                    <img src="./images/food-logo-img.png" alt="food-logo" class="img-fluid d-xl-none d-inline-block" width="100">
+                    <span class="h5 text-uppercase">Tasty</span> Food Palette
+                    </a>
+                    <ul class="nav navbar-nav ms-sm-3 text-center text-sm-start ms-lg-0 mx-xl-auto">
+                    <li class="nav-item active ms-xl-3">
+                        <a href="#starter" class="nav-link fw-semibold text-white">Starters</a>
+                    </li>
+                    <li class="nav-item ms-xl-3">
+                        <a href="#chinese-lunch" class="nav-link fw-semibold text-white">Lunch</a>
+                    </li>
+                    <li class="nav-item ms-xl-3">
+                        <a href="#chinese-dinner" class="nav-link fw-semibold text-white">Dinner</a>
+                    </li>
+                    <li class="nav-item ms-xl-3">
+                        <a href="#chinese-drinks" class="nav-link fw-semibold text-white">Drinks</a>
+                    </li>
+                </ul>
+            </div>
+                <div class="ms-lg-auto my-3 d-flex justify-content-around align-items-center justify-content-sm-center">
+                    <a href="aboutus.html" class="btn btn-secondary text-white fw-semibold  text-center">About Us</a>
+                    <a href="#contactus" class="btn btn-info text-white fw-semibold text-center ms-0 ms-lg-4 ms-sm-4">Contact Us</a>
+            </div>
+            </div>
+        </div>
+    </nav>
+</div>
+   <!--end navbar-->
+   <!--header with bg-->
+<section class="starter" id="starter">
+        <!--carousel-->
+    <div class="container-fluid">
+    <div class="row border-0">
+    <div class="container-fluid">
+      <div id="carouselchinese" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner rounded rounded-bottom-4 h-100 overflow-visible">
+            <div class="carousel-item active rounded rounded-bottom-4 chinese-item position-relative h-100">
+                <img src="./images/bg-img-9.jpg" alt="chinese-carousel" class="w-100 d-block" height="480">
+                <div class="carousel-caption position-absolute top-50 start-50 translate-middle d-block w-50">
+                   <h4 class="fw-bold display-4"></h4>
+                </div>
+                <div class="container-fluid">
+                <div class="row position-absolute top-100 start-50 border-0 translate-middle mx-auto d-block d-flex flex-md-row flex-md-wrap justify-content-md-around starter flex-column">
+                    <div class="col-lg-4 col-12  offset-0 col-sm-8 offset-sm-2 col-md-6 offset-md-0">
+                        <div class="card position-relative h-100 border-0 rounded-3 card-cstarter-one">
+                            <div class="row g-0">
+                                <div class="col-4 col-md-4">
+                                    <img src="./images/Chinese-soup-img-2.png" alt="chinese-soup-1" width="125" class="position-absolute top-50 start-0 translate-middle-y">
+                                </div>
+                                <div class="col-sm-7 col-8 offset-sm-1 offset-0 col-md-7 offset-md-1">
+                                   <div class="card-body ms-sm-0 ms-3">
+                                      <h5 class="card-title fw-semibold text-info lh-base">Creamy Soup</h5>
+                                      <h6 class="card-subtitle fw-medium text-white">Cream, Chicken</h6>
+                                      <h6 class="small lh-base fw-medium text-white card-text mt-2 d-none d-sm-block">The broth is rich and aromatic, medical benefits spices, herbs.</h6>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-12 offset-0 col-sm-8 offset-sm-2 col-md-6 offset-md-0 mt-md-0 mt-4">
+                        <div class="card position-relative h-100 border-0 rounded-3 card-cstarter-two">
+                            <div class="row g-0">
+                                <div class="col-4 col-md-4">
+                                    <img src="./images/Chinese-salad-img-1.png" alt="chinese-salad" width="140" class="position-absolute top-50 start-0 translate-middle-y ms-sm-0 ms-0">
+                                </div>
+                                <div class="col-sm-7 col-8 offset-sm-1 offset-0 col-md-7 offset-md-1">
+                                    <div class="card-body ms-sm-0 ms-4 ms-md-0">
+                                        <h5 class="card-title fw-semibold text-info lh-base">Quinoa Salad</h5>
+                                        <h6 class="card-subtitle fw-medium text-white">Mix Vegetable</h6>
+                                        <h6 class="small lh-base fw-medium text-white card-text mt-2 d-none d-sm-block">It's an ideal choice for those seeking a light yet fulfilling meal.</h6>
+                                    </div>
+                            </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-12  offset-0 col-sm-8 offset-sm-2 col-md-6 offset-md-0 mt-lg-0 mt-4">
+                        <div class="card position-relative h-100 border-0 rounded-3 card-cstarter-three">
+                            <div class="row g-0">
+                                <div class="col-4 col-md-4">
+                                    <img src="./images/green-img.jpg" alt="chinese-soup-2" width="90" class="rounded-circle position-absolute top-50 start-0 translate-middle-y ms-sm-4 ms-3 ms-lg-3 ms-xl-3">
+                                </div>
+                                <div class="col-sm-7 col-8 offset-sm-1 offset-0 col-md-7 offset-md-1">
+                                    <div class="card-body ms-sm-0 ms-3 pt-5 pb-5 pt-sm-0 pt-md-2 pb-md-2 pb-lg-0 pt-lg-5 pt-xl-2 pb-xl-0 pb-sm-0 pb-md-0 pt-0">
+                                        <h5 class="card-title fw-semibold text-info">Minty Soup</h5>
+                                        <h6 class="card-subtitle fw-medium text-white">Curd, Herbs</h6>
+                                        <h6 class="small lh-base fw-medium text-danger card-text mt-2 d-none d-sm-block">Delicious to and mushroom, tofu with spices help boost immunity.</h6>
+                                    </div>
+                            </div>
+                            </div>
+                        </div>
+                    </div>
+                   
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item rounded rounded-bottom-3 position-relative h-100">
+                <img src="./images/Special-non-veg-img-1.jpg" alt="thai-carousel" class="w-100 d-block" height="550">
+                <div class="carousel-caption position-absolute top-50 start-50 translate-middle d-block w-50">
+                    <h4 class="fw-bold display-4"></h4>
+                 </div>
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselchinese" data-bs-slide="prev">
+            <span><i class="fa-solid fa-circle-arrow-left text-info fa-2x"></i></span>
+             <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselchinese" data-bs-slide="next">
+             <span><i class="fa-solid fa-circle-arrow-right text-info fa-2x"></i></span>
+             <span class="visually-hidden">Next</span>
+        </button>
+       </div>
+    
+    </div>
+    </div>
+       <!--end carousel-->
+    </div>
+</section>
+   <!--end header with bg-->
+   <!--chinese-lunch-->
+   <section class="chinese-lunch mt-md-8 mt-8" id="chinese-lunch">
+   <div class="container-fluid">
+    <div class="row d-flex flex-column flex-md-row">
+        <div class="col-lg-10 border-0 col-12 offset-0 col-md-10 offset-md-1 offset-lg-1">
+            <div class="row d-flex flex-column justify-content-center align-items-center d-lg-flex flex-md-row align-items-md-center justify-content-md-around">
+                <div class="col-lg-4 col-12 border-0 offset-0 col-sm-10 col-md-5 mt-sm-6 mt-md-0 d-flex justify-content-center align-items-center">
+                    <div class="image-container rounded-4">
+                        <img src="./images/chinese-lunch-main-img.png" alt="chinese-lunch-img" height="400" class="chineselunchimg" >
+                    </div>
+                </div>
+                <div class="col-lg-7 col-12 offset-0 col-sm-10 col-md-7 offset-lg-1 mt-4 mt-md-0">
+                    <div class="text-container text-center px-2 px-sm-0">
+                       <h3 class="fw-bold text-info">Chinese Cuisine at Lunch</h3>
+                       <h6 class="fw-medium mt-3 lh-base">We invite you to experence the rich and diverse flavours of <strong class="text-secondary h6">Chinese Cuisine</strong> with curated lunch menu. Our dishes are inspired by traditional receipes and crafted with the finest ingredients, offering a meal that will make your day more brighten. Our lunch menu a wide array of dishes the diverse culinary traditions of China.</h6>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+   </div>
+   <!--lunch menu-->
+<div class="container-fluid mt-5 mt-md-6 mt-lg-7">
+    <div class="row d-xl-flex justify-content-xl-center align-items-xl-center chinese-lunch-container py-5 shadow">
+        <div class="col-lg-12 offset-lg-0 col-10 offset-1 col-sm-12 offset-sm-0 col-md-10 offset-md-1 col-xl-10 offset-xl-0">
+            <div class="row border-0 mx-lg-auto d-flex flex-column flex-sm-row flex-sm-wrap justify-content-sm-around align-items-sm-center justify-content-lg-betweeen align-items-center justify-content-center">
+                <div class="col-lg-4 col-8 offset-2 ms-0 col-sm-5 col-md-5  offset-md-0 offset-sm-0 card border-0 rounded-3 shadow card-clunch-one">
+                         <img src="./images/Chinese-lunch-img-1.jpg" alt="Chinese-lunch-img-1" class="card-img-top rounded-bottom-5 rounded-start-2" height="225" />
+                         <div class="card-body">
+                                <h5 class="fw-semibold text-secondary card-subtitle">Rice Mix Bowl</h5>
+                            <h4 class="card-title fw-bold text-info mt-2">$45.98</h4>
+                            <a id="popoverone" data-bs-toggle="popover" data-bs-title="Rice Mix Bowl" data-bs-trigger="focus" tabindex="0" data-bs-content="<span class=fw-semibold small lh-base>
+                                It is a popular dish that typically includes a variety of ingredients like</span> <strong class=text-primary> Rice, Protein, Vegetables, Egg, Sauces and Seasonings, Garnishes.</strong>"
+                            " data-bs-html="true"  data-bs-placement="bottom"
+                             class="card-link btn btn-danger fw-semibold rounded-3 mt-2 py-2 px-3">See the Ingredients</a>
+                         </div>
+                         <div class="rating-buy mt-1 d-flex align-items-center">
+                            <div class="stars ms-3">
+                              <span><i class="fa-solid fa-star text-warning"></i></span>
+                              <span><i class="fa-solid fa-star text-warning"></i></span>
+                              <span><i class="fa-solid fa-star text-warning"></i></span>
+                              <span><i class="fa-solid fa-star text-warning"></i></span>
+                              <span><i class="fa-solid fa-star text-warning"></i></span>
+                            </div>
+                            <a href="#" class="btn btn-info text-white border-end-0 border-top border-start border-bottom text-center rounded-end-0 rounded-start-2 float-end ms-auto">
+                                <i class="fa-solid fa-plus text-white"></i>
+                            </a>
+                        </div>
+                </div>
+                <div class="col-lg-4 col-8 offset-2 ms-0 col-sm-5 col-md-5 offset-md-0 offset-sm-0 card border-0 rounded-3 shadow card-clunch-one mt-5 mt-sm-0">
+                        <img src="./images/Chinese-lunch-img-2.jpg" alt="Chinese-lunch-img-2" class="card-img-top rounded-bottom-5 rounded-start-2" height="225" />
+                        <div class="card-body">
+                           <h5 class="fw-semibold text-warning card-subtitle">Egg Chicken Noodles</h5>
+                           <h4 class="card-title fw-bold text-info mt-2">$24.79</h4>
+                           <a id="popovertwo" data-bs-toggle="popover" data-bs-title="Egg Chicken Noodles" data-bs-trigger="focus" tabindex="0" data-bs-content="<span class=fw-semibold small lh-base>
+                            Chicken with Egg Noodles is the dish that includes a variety of ingredients like </span> <strong class=text-warning> Egg, Oregano, Red chilli, Chicken,  Sauces , spring onions, Seasonings.</strong>"
+                            data-bs-html="true"  data-bs-placement="bottom" class="card-link btn btn-danger text-white fw-semibold rounded-3 mt-2 py-2 px-3">See the Ingredients</a>
+                        </div>
+                        <div class="rating-buy mt-1 d-flex align-items-center">
+                           <div class="stars ms-3">
+                             <span><i class="fa-solid fa-star text-warning"></i></span>
+                             <span><i class="fa-solid fa-star text-warning"></i></span>
+                             <span><i class="fa-solid fa-star text-warning"></i></span>
+                             <span><i class="fa-solid fa-star text-warning"></i></span>
+                             <span><i class="fa-solid fa-star text-warning"></i></span>
+                           </div>
+                           <a href="#" class="btn btn-secondary text-white border-end-0 border-top border-start border-bottom text-center rounded-end-0 rounded-start-2 float-end ms-auto">
+                               <i class="fa-solid fa-plus text-white"></i>
+                           </a>
+                       </div>
+               </div>
+               <div class="col-lg-4 col-8 offset-2 ms-0 col-sm-5 col-md-5  offset-md-0 offset-sm-0 border-0 card rounded-3 shadow card-clunch-one mt-5 mt-lg-0">
+                    <img src="./images/bg-img-1-pink.jpg" alt="Chinese-lunch-img-3" class="card-img-top rounded-bottom-5 rounded-start-2" height="225" />
+                    <div class="card-body">
+                       <h5 class="fw-semibold text-black card-subtitle">Fried Meat Noodle</h5>
+                       <h4 class="card-title fw-bold text-info mt-2">$74.59</h4>
+                       <a id="popoverthree" data-bs-toggle="popover" data-bs-title="Fried Noodles with Meat" data-bs-trigger="focus" tabindex="0" data-bs-content="<span class=fw-semibold small lh-base text-white>
+                        Fried Noodles dish with meat that includes a variety of ingredients like </span> <strong class=text-primary> Noodles, Egg, Vegetables, Spinach, Sauces ,Spring Onions and Meat.</strong>"
+                        data-bs-html="true"  data-bs-placement="bottom"class="card-link btn btn-danger text-white fw-semibold rounded-3 mt-2 py-2 px-3">See the Ingredients</a>
+                    </div>
+                    <div class="rating-buy mt-1 d-flex align-items-center">
+                       <div class="stars ms-3">
+                         <span><i class="fa-solid fa-star text-warning"></i></span>
+                         <span><i class="fa-solid fa-star text-warning"></i></span>
+                         <span><i class="fa-solid fa-star text-warning"></i></span>
+                         <span><i class="fa-solid fa-star text-warning"></i></span>
+                         <span><i class="fa-solid fa-star text-warning"></i></span>
+                       </div>
+                       <a href="#" class="btn btn-primary text-white border-end-0 border-top border-start border-bottom text-center rounded-end-0 rounded-start-2 float-end ms-auto">
+                           <i class="fa-solid fa-plus text-white"></i>
+                       </a>
+                   </div>
+           </div>
+            </div>
+        </div>
+    </div>
+</div>
+   <!--end lunch menu-->
+   </section>
+   <!--end chinese-lunch-->
+   <!--chinese-dinner-->
+   <section class="chinese-dinner mt-5 mt-md-6 mt-lg-7 mt-xl-5 border-0" id="chinese-dinner">
+   <div class="container border-0 mb-8 mb-sm-0">
+    <div class="row border-0 d-lg-flex flex-lg-row justify-content-center align-items-center">
+        <div class="col-lg-5 col-12 offset-0 col-sm-12 offset-sm-0 border-0">
+          <div class="text-container px-2">
+            <h1 class="fw-bold text-info lh-base text-center">Exploring Regional Flavours</h1>
+            <h6 class="fw-medium mt-4 lh-base text-center">
+                At <strong class="fw-bold text-black">Tasty Food Palette</strong>, Our dinner menu showcases the best of China's culinary regions, and refined flavours of cantonse cuisine. It includes healthful options designed to provide a balanced meals. Enjoy dishes that are steamed, Stir-fried, lightly seasoned to hightlight the natural flavors of the ingredients.
+            </h6>
+            <div class="d-flex justify-ceontent-center align-items-center">
+            <a href="#chinese-dinner-menu" class="btn mx-auto btn-success text-white fw-semibold mt-3 rounded-4 border-0 shadow px-3 py-2">Explore Our Menu's
+                <i class="fa-solid fa-arrow-right-long ms-2 text-center fw-bolder text-primary"></i>
+            </a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-6 col-12 offset-0 col-sm-10 offset-sm-0 col-md-10 offset-md-0 offset-lg-0 border-0 mb-0 mb-sm-0">
+            <div class="image-container position-relative border-warning">
+                <img src="./images/Chinese-dinner-img-1-2.png" alt="chinese-dinner-img" width="430" class="img-fluid position-relative"/>
+                <div class="d-flex d-flex flex-column flex-lg-row flex-sm-row position-absolute gap-lg-3 gap-sm-5 gap-3 card-dinner-main border-0 mx-sm-auto">
+                   <div class="card rounded-2 px-3 pt-3 pb-3 shadow border-0 card-dinner-sub-menu" style="width:190px;height:auto;">
+                    <i class="fa-solid fa-heart"></i>
+                    <img src="./images/Chinese-salad-img-3.png" alt="chinese-dinner" width="110" class="ms-auto">
+                    <div class="text-container">
+                        <h6 class="small fw-medium text-muted">Salad</h6>
+                        <h6 class="fw-bold text-dark">Mixed Protein Salad</h6>
+                        <div class="rating mt-2">
+                            <span><i class="fa-solid fa-star text-warning"></i></span>
+                            <span><i class="fa-solid fa-star text-warning"></i></span>
+                            <span><i class="fa-solid fa-star text-warning"></i></span>
+                            <span><i class="fa-solid fa-star text-warning"></i></span>
+                            <span><i class="fa-solid fa-star text-warning"></i></span>
+                        </div>
+                        <div class="d-flex justify-content-between align-items-center mt-2">
+                            <div class="comment">
+                                <i class="fa-solid fa-comment"></i>
+                                <small class="text-muted ms-2 fw-semibold">Chats</small>
+                            </div>
+                            <div class="likes">
+                                <i class="fa-solid fa-thumbs-up"></i>
+                                <small class="text-muted ms-2 fw-semibold">likes</small>
+                            </div>
+                        </div>
+                    </div>
+                   </div>
+                   <div class="card  d-none d-sm-flex rounded-2 px-3 pt-3 pb-3 shadow border-0 card-dinner-sub-menu" style="width:190px;height:auto;">
+                    <i class="fa-solid fa-heart"></i>
+                    <img src="./images/chinese-starter-img-2-1.png" alt="chinese-dinner" width="92" class="ms-auto">
+                    <div class="text-container">
+                        <h6 class="small fw-medium text-muted">Tandoori</h6>
+                        <h6 class="fw-bold text-dark">Chicken Kabab</h6>
+                        <div class="rating mt-2">
+                            <span><i class="fa-solid fa-star text-warning"></i></span>
+                            <span><i class="fa-solid fa-star text-warning"></i></span>
+                            <span><i class="fa-solid fa-star text-warning"></i></span>
+                            <span><i class="fa-solid fa-star text-warning"></i></span>
+                            <span><i class="fa-solid fa-star text-warning"></i></span>
+                        </div>
+                        <div class="d-flex justify-content-between align-items-center mt-2">
+                            <div class="comment">
+                                <i class="fa-solid fa-comment"></i>
+                                <small class="text-muted ms-2 fw-semibold">Chats</small>
+                            </div>
+                            <div class="likes">
+                                <i class="fa-solid fa-thumbs-up"></i>
+                                <small class="text-muted ms-2 fw-semibold">likes</small>
+                            </div>
+                        </div>
+                    </div>
+                   </div>
+                </div>
+            </div>
+        </div>
+    </div>
+   </div>
+   <!--dinner-menu-->
+   <div class="container mt-8 mt-sm-6">
+    <div class="row shadow rounded-2 chinese-dinner-container pt-6 pb-5">
+        <div class="col-lg-10 offset-lg-1 col-xl-8 offset-xl-2 col-12 offset-0 border-0 col-sm-12 offset-0 col-md-12 offset-md-0">
+           <div class="row d-flex flex-sm-row flex-sm-wrap justify-content-sm-around align-items-sm-center">
+                <div class="col-lg-4 offset-lg-0 col-xl-3 offset-xl-1 col-8 offset-2 col-sm-5 offset-sm-0 col-md-4 offset-md-0 mt-6 mt-sm-0">
+                    <div class="card position-relative rounded-4 border-0 shadow card-dinner-menu-one">
+                        <img src="./images/Chinese-starter-img-1.jpg" alt="" class="card-img-top position-absolute top-0 start-50 translate-middle rounded-circle" height="130">
+                        <a href="#" class="btn btn-info card-basket rounded-4 py-1 px-3 position-absolute start-50 translate-middle">
+                            <i class="fa-solid fa-plus text-white"></i>
+                        </a>
+                        <div class="card-body mt-5">
+                            <h5 class="card-title fw-bold text-black mt-4 text-center">Meat Grill</h5>
+                            <h6 class="small fw-medium card-text text-muted lh-base">
+                               Grills are a Sichuan specialty known for their bold, spicy flavors.
+                            </h6>
+                            <h6 class="fw-bold text-center card-subtitle text-danger mt-2">$15.99</h6>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 offset-lg-0 col-xl-3 offset-xl-1 col-8 offset-2 col-sm-5 offset-sm-0 col-md-4 offset-md-0 mt-6 mt-sm-0">
+                    <div class="card position-relative rounded-4 border-0 shadow card-dinner-menu-two">
+                        <img src="./images/Chinese-dinner-img-2.jpg" alt="" class="card-img-top position-absolute top-0 start-50 translate-middle rounded-circle" height="130">
+                        <a href="#" class="btn btn-secondary card-basket rounded-4 py-1 px-3 position-absolute start-50 translate-middle">
+                            <i class="fa-solid fa-plus text-white"></i>
+                        </a>
+                        <div class="card-body mt-5">
+                            <h5 class="card-title fw-bold text-info mt-4 text-center">Lo Mein</h5>
+                            <h6 class="small fw-medium card-text text-muted lh-base">
+                               Our Pasta is crowd favourite, soft and chewy noodles stir-fried choice.
+                            </h6>
+                            <h6 class="fw-bold text-center card-subtitle text-danger mt-2">$20.55</h6>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 offset-lg-0 col-xl-3 offset-xl-1 col-8 offset-2 col-sm-5 offset-sm-0 col-md-4 offset-md-0 mt-6 mt-sm-6 mt-md-0">
+                    <div class="card position-relative rounded-4 border-0 shadow card-dinner-menu-three">
+                        <img src="./images/chinese-starter-img-3.jpg" alt="" class="card-img-top position-absolute top-0 start-50 translate-middle rounded-circle" height="130">
+                        <a href="#" class="btn btn-info card-basket rounded-4 py-1 px-3 position-absolute start-50 translate-middle">
+                            <i class="fa-solid fa-plus text-white"></i>
+                        </a>
+                        <div class="card-body mt-5">
+                            <h5 class="card-title fw-bold text-secondary mt-4 text-center">Dan Prawns</h5>
+                            <h6 class="small fw-medium card-text text-muted lh-base">
+                               Tossed in a flavorful sauce, including variety of protein, shrimp or tofu.
+                            </h6>
+                            <h6 class="fw-bold text-center card-subtitle text-danger mt-2">$36.49</h6>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+   </div>
+   <!--end dinner-menu-->
+   </section>
+   <!--end chinese-dinner-->
+   <!--chinese-drinks-->
+   <section id="chinese-drinks" class="chinese-drinks border-0 mt-6 mt-md-6">
+    <div class="container-fluid border-0">
+        <div class="row border-0">
+            <div class="col-lg-10 offset-lg-1 col-12 offset-0 col-sm-12 offset-sm-0 col-md-12 offset-md-0 border-0">
+                <div class="row d-flex flex-column justify-content-center align-items-center flex-md-row flex-md-wrap align-items-center justify-content-md-around">
+                    <div class="col-lg-5 col-12 offset-0 col-sm-12 offset-sm-0 col-md-5 d-flex justify-content-center align-items-center justify-content-md-around">
+                        <div class="image-container border-0">
+                            <img src="./images/chinese-drinks-img.png" alt="chinese-lunch-img" height="400" class="img-fluid">
+                        </div>
+                    </div>
+                    <div class="col-lg-7 offset-lg-0 col-12 offset-0 col-sm-10 offset-sm-0 border-0 col-md-7 offset-md-0 mt-4 mt-md-0">
+                        <div class="text-container">
+                           <h3 class="fw-bold text-info text-center">Chinese Flavorful Drinks</h3>
+                           <h6 class="fw-medium mt-3 lh-base px-2 px-sm-0">Drinks are sweet and exotic beverage made from fresh fruits. <strong class="text-secondary h6">Chinese Drinks</strong> is refreshing perfect for those who enjoy a fruity and tropical flavor. These drinks are naturally hydrating and offers a distinct sweet and sour flavors that is both refreshing and intriguting and burst of freshness, making an ideal choice for a hot day. </h6>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--drinks-menu-->
+    <div class="container-fluid mt-5">
+        <div class="row border-0 shadow">
+            <div class="col-lg-12 offset-lg-0 col-xl-10 offset-xl-1 col-12 offset-0 col-sm-12 offset-sm-0 col-md-12 offset-md-0">
+                <div class="row d-flex flex-column align-items-center justify-content-center flex-sm-row flex-sm-wrap justify-content-sm-center align-items-sm-center justify-content-md-around justify-content-lg-start justify-content-xl-between">
+                    <div class="col-lg-4 col-10 offset-0 col-sm-6 col-md-4">
+                        <div class="images-container border-0 d-flex justify-content-center align-items-center">
+                            <img src="./images/chinese-drinks-img-1.png" alt="chinese-drink-1" height="180"
+                            >
+                        </div>
+                            <h5 class="text-center fw-bold text-danger">Jasmine Tea</h5>
+                           <div class="text-container border card-drink-jasmine bg-warning p-3 mt-sm-5 mt-3 rounded-2 shadow position-relative ">
+                                <h6 class="small fw-semibold text-white card-text lh-base">
+                                   Our Jasmine Tea is a aromatic beverage made from highh-quality green tea leaves infused with the essence of Jasmine flowers. 
+                                </h6>
+                                <div class="d-flex justify-content-between align-items-center mt-2">
+                                <a href="#" class="btn text-white fw-semibold rounded-3 px-2 py-1 px-sm-1 py-sm-2 px-lg-3 py-lg-2">Drink Now</a>
+                                <h5 class="fw-semibold text-danger h6">Price: $15.60</h5>
+                                </div>
+                            </div>
+                    </div>
+                    <div class="col-lg-4 col-10 offset-0 col-sm-6 col-md-4 mt-4 mt-sm-0">
+                        <div class="images-container d-flex justify-content-center align-items-center">
+                            <img src="./images/chinese-drinks-img-2.png" alt="chinese-drink-2" height="180"
+                            >
+                        </div>
+                            <h5 class="text-center fw-bold text-danger">Plum Juice</h5>
+                           <div class="text-container border-0 card-drink-plum p-3 mt-sm-5 mt-3 rounded-2 shadow position-relative">
+                                <h6 class="small fw-semibold text-white card-text lh-base">
+                                   Plum juice is a tangy and unique drink made from preserved chinese plums. It is often enjoy for its digetive, cleanse the palate.
+                                </h6>
+                                <div class="d-flex justify-content-between align-items-center mt-2">
+                                <a href="#" class="btn fw-semibold text-white rounded-3 px-2 py-1 px-sm-1 py-sm-2 px-lg-3 py-lg-2">Drink Now</a>
+                                <h5 class="fw-semibold text-warning h6">Price: $10.99</h5>
+                                </div>
+                            </div>
+                    </div>
+                    <div class="col-lg-4 col-10 offset-0 col-sm-6 col-md-4 mt-4 mt-md-0">
+                        <div class="images-container d-flex justify-content-center align-items-center">
+                            <img src="./images/chinese-drinks-img-3.png" alt="chinese-drink-3" height="170" width="160"
+                            >
+                        </div>
+                            <h5 class="text-center fw-bold text-danger">Kiwi Juice</h5>
+                           <div class="text-container border-0 card-drink-kiwi p-3 mt-sm-5 mt-3 rounded-2 shadow position-relative h-100">
+                                <h6 class="small fw-semibold text-white card-text lh-base">
+                                   Kiwis are known for high vitamin C, making our Kiwi Juice an excellent choice for boosting your body immune and system. 
+                                </h6>
+                                <div class="d-flex justify-content-between align-items-center mt-2">
+                                <a href="#" class="btn fw-semibold rounded-3 px-2 py-1 px-sm-1 py-sm-2 px-lg-3 py-lg-2">Drink Now</a>
+                                <h5 class="fw-semibold text-danger h6">Price: $22.67</h5>
+                                </div>
+                            </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--end-drinks-menu-->
+   </section>
+   <!--end chinese-drinks-->
+   <!--pagination-->
+<div class="container-fluid my-6">
+    <nav aria-label="page navigation example">
+        <ul class="pagination justify-content-lg-end">
+            <li class="page-item">
+                <a href="index.html" class="page-link" aria-label="previous">
+                    <span aria-hidden="true"><i class="fa-solid fa-angles-left text-secondary"></i></span>
+                </a>
+            </li>
+            <li class="page-item">
+                <a href="index.html" class="page-link" >
+                    1
+                </a>
+            </li>
+            <li class="page-item">
+                <a href="chinese.html" class="page-link bg-info border-info fw-semibold text-white active">
+                    2
+                </a>
+            </li>
+            <li class="page-item">
+                <a href="thai.html" class="page-link" >
+                    3
+                </a>
+            </li>
+            <li class="page-item">
+                <a href="aboutus.html" class="page-link">
+                    4
+                </a>
+            </li>
+            <li class="page-item">
+                <a href="thai.html" class="page-link">
+                    <span aria-hidden="true"><i class="fa-solid fa-angles-right text-secondary"></i></span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+</div>
+<!--end-pagination-->
+    <!--footer-contact us-->
+    <footer class="contactus contact_img pt-4 pb-3 position-relative" id="contactus">
+        <img src="./images/lemon-footer-img.png" alt="strawberry-footer-img" class="position-absolute top-0 end-0" width="180">
+        <img src="./images/strawbery-footer-img.png" alt="lemon-footer-img" class="position-absolute top-0 start-0" width="180">
+      <div class="container-fluid position-relative">
+        <div class="row d-flex flex-lg-row flex-lg-wrap flex-column">
+        <div class="col-lg-12 col-xl-10 offset-xl-1 offset-lg-0 col-sm-10 offset-sm-1">
+        <div class="row">
+              <div class="col-lg-4 col-12 col-md-10 offset-md-1 offset-lg-0 text-center border-0">
+                <h3 class="fw-semibold text-black fs-4 mb-4">Contact Us</h3>
+                <form action="">
+                 <div class="mb-4">
+                    <input type="text" name="name" id="name" class="form-control shadow rounded-3 border-0 py-2 px-4" placeholder="Enter Your Name">
+                 </div>
+                 <div class="mb-4">
+                    <input type="email" name="email" id="email" class="form-control shadow rounded-3 border-0 py-2 px-4" placeholder="Enter Your Email">
+                 </div>
+                 <div class="mb-4">
+                    <textarea name="textarea" id="textarea" class="form-control shadow rounded-3 border-0 py-3 px-4">Write a Query Here!</textarea>
+                 </div>
+                 <div class="mb-4">
+                    <input type="button" value="Submit" class="btn btn-info text-white fw-semibold rounded-4">
+                 </div>
+                </form>
+              </div>
+              <div class="col-lg-4 col-xl-5 border-0 col-md-10 offset-md-1 offset-lg-0">
+                <h3 class="fw-semibold text-black fs-4 mb-4 text-center">Tasty Food Palette</h3>
+                <h6 class="small fw-medium lh-base text-success text-center">At this restaurant, we are always eager to hear from our customers. Your feedbck is invaluable and helps us to continously improve.</h6>
+                <ul class="list-unstyled contact-list mt-3 mt-lg-4 d-flex gap-2 flex-column align-items-center justify-content-center flex-lg-row justify-content-lg-between flex-lg-wrap">
+                    <li class="list-item active"><a href="index.html" class="text-decoration-none text-info fw-semibold h6">Home</a></li>
+                    <li class="list-item"><a href="index.html" class="text-decoration-none text-info fw-semibold h6">Indian-Cuisine</a></li>
+                    <li class="list-item"><a href="chinese.html" class="text-decoration-none text-info fw-semibold h6">Chinese-Cuisine</a></li>
+                    <li class="list-item"><a href="thai.html" class="text-decoration-none text-info fw-semibold h6">Thai-Cuisine</a></li>
+                    <li class="list-item"><a href="index.html" class="text-decoration-none text-info fw-semibold h6">Special</a></li>
+                    <li class="list-item"><a href="index.html" class="text-decoration-none text-info fw-semibold h6">Dinning</a></li>
+                    <li class="list-item"><a href="index.html" class="text-decoration-none text-info fw-semibold h6">Services</a></li>
+                    <li class="list-item"><a href="aboutus.html" class="text-decoration-none text-info fw-semibold h6">About Us</a></li>
+                </ul>
+                <ul class="list-unstyled">
+                    <li class="list-item d-flex align-items-center">
+                        <i class="fa-solid fa-location-dot text-secondary me-3"></i>
+                        <h6 class="small fw-semibold text-danger lh-base">
+                            Tasty Food Palette Restaurant
+                            MNO street, RT State-754632.
+                        </h6>
+                    </li>
+                    <li class="list-item d-flex align-items-center">
+                        <i class="fa-solid fa-envelope text-secondary me-3"></i>
+                        <h6 class="small lh-base text-danger fw-semibold">
+                            tastyfoodpaletteres@gmail.com
+                        </h6>
+                    </li>
+                    <li class="list-item d-flex align-items-center">
+                        <i class="fa-solid fa-phone text-secondary me-3"></i>
+                        <h6 class="small fw-semibold lh-base text-danger">
+                            +0987654321
+                        </h6>
+                    </li>
+                </ul>
+                <div class="col-8 offset-2">
+                <ul class="list-unstyled mt-3 mb-4 rounded-2 shadow-lg d-flex justify-content-around py-2">
+                    <li class="list-item">
+                        <i class="fa-brands fa-facebook fa-2x text-success"></i>
+                    </li>
+                    <li class="list-item">
+                        <i class="fa-brands fa-instagram fa-2x text-black"></i>
+                    </li>
+                    <li class="list-item">
+                        <i class="fa-brands fa-twitter fa-2x text-info"></i>
+                    </li>
+                    <li class="list-item">
+                        <i class="fa-brands fa-linkedin fa-2x text-success"></i>
+                    </li>
+                </ul>
+            </div>
+              </div>
+              <div class="col-lg-4 col-xl-3 border-0 d-flex justify-content-xl-start">
+                <div class="image-container float-lg-end text-center">
+                    <img src="./images/Chinese-salad-img-3.png" alt="footer-img" height="300">
+                </div>
+              </div>
+            </div>
+        </div>
+        </div>
+    </div>
+    </footer>
+    <!--end footer contact us-->
+<!--back to top btn-->
+<button id="back-to-top" class="back-to-top-circle">
+    <i class="fa-solid fa-angles-up text-white"></i>
+   </button>
+   <!--end back to top btn-->
+ <!--script starts-->
+    <script src="js/script.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script>
+        const popoverEll = document.getElementById('popoverone');
+        const popover = new bootstrap.Popover(popoverEll);
+        const popoverEl2 = document.getElementById('popovertwo');
+        const popover1 = new bootstrap.Popover(popoverEl2);
+        const popoverEl3 = document.getElementById('popoverthree');
+        const popover2 = new bootstrap.Popover(popoverEl3);
+    </script>
+</body>
+</html>

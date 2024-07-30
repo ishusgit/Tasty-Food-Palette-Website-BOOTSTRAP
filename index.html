@@ -1,0 +1,1513 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food website</title>
+    <!--google fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/fontawesome.css">
+    <style>
+        body,html{
+            padding-top:43px;
+       }
+    </style>
+</head>
+<body>
+    <!--navbar-->
+<div class="container-fluid mx-0 w-100 main-bg">
+    <nav class="navbar navbar-expand-xl navbar-dark fixed-top py-xl-1 py-md-2 py-sm-2 py-3 px-2 mx-0">
+        <div class="container-fluid">
+            <a href="index.html" class="navbar-brand d-flex align-items-center text-center  fw-bold text-primary">
+                <img src="./images/food-logo-img.png" alt="food-logo" class="img-fluid d-none d-sm-inline-block" width="100">
+                <span class="h4 text-uppercase mb-0 me-1">TASTY </span> Food Palatte
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarExample">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div id="navbarExample" class="collapse navbar-collapse">
+                <ul class="nav navbar-nav mx-auto">
+                    <li class="nav-item ms-4">
+                        <a href="index.html" class="nav-link fw-semibold">Home</a>
+                    </li>
+                    <li class="nav-item ms-4 dropdown">
+                        <a href="index.html" class="nav-link fw-semibold dropdown-toggle" data-bs-toggle="dropdown">Cuisine</a>
+                        <ul class="dropdown-menu border-0 outline-none my-3">
+                            <a href="#indian-cuisine" class="dropdown-item fw-semibold">Indian-Cuisine</a>
+                            <a href="chinese.html" class="dropdown-item fw-semibold">Chinese-Cuisine</a>
+                            <a href="thai.html" class="dropdown-item fw-semibold">Thai-Cuisine</a>
+                        </ul>
+                    </li>
+                    <li class="nav-item ms-4 dropdown special-dropdown">
+                        <a href="#" class="nav-link fw-semibold dropdown-toggle" data-bs-toggle="dropdown">Special</a>
+                        <ul class="dropdown-menu border-0 outline-none my-3">
+                            <a href="#nav-nonveg" class="dropdown-item fw-semibold">Non-Vegetarian</a>
+                            <a href="#special" class="dropdown-item fw-semibold">Vegetarian</a>
+                            <a href="#special" class="dropdown-item fw-semibold">Starters</a>
+                            <a href="#special" class="dropdown-item fw-semibold">Desserts</a>
+                            <a href="#special" class="dropdown-item fw-semibold">Drinks</a>
+                        </ul>
+                    </li>
+                    <li class="nav-item ms-4">
+                        <a href="#dinning" class="nav-link fw-semibold">Dinning</a>
+                    </li>
+                    <li class="nav-item ms-4">
+                        <a href="#services" class="nav-link fw-semibold">Services</a>
+                    </li>
+                </ul>
+                <div class="ms-lg-auto my-xl-3 backab-color d-flex flex-row justify-content-center">
+                <a href="aboutus.html" class="btn btn-warning text-white text-center rounded-3 ms-lg-3 ms-xl-0">About Us</a>
+                <a href="#contactus" class="btn btn-info text-white text-center rounded-3 ms-4 ms-lg-2 ms-xl-4">Contact Us</a>
+                <a href="" class="btn btn-secondary rounded-circle py-2 px-3 text-center ms-lg-3 ms-4" data-bs-toggle="offcanvas" data-bs-target="#cart-items">
+                    <i class="fa-solid fa-cart-shopping text-white"></i>
+                </a>
+            </div>
+            </div>
+        </div>
+    </nav>
+</div>
+<!--offcanvas cart-shopping-items-->
+<div class="offcanvas offcanvas-end" data-bs-scroll="true" data-bs-backdrop="true" id="cart-items">
+    <div class="offcanvas-content">
+        <div class="offcanvas-header">
+            <h5 class="offcanvas-title fw-bolder small text-secondary text-uppercase text-decoration-underline">Shopping Cart items</h5>
+            <button class="btn btn-close" data-bs-dismiss="offcanvas"></button>
+        </div>
+        <div class="offcanvas-body">
+            <div class="container">
+                <div class="row border-0 shadow rounded-2">
+                    <div class="col-6">
+                        <div class="image-container text-center">
+                            <img src="./images/Thai-starter-img-2.png" alt="add-cart-1" width="70">
+                            <div class="add-minus d-flex justify-content-around align-items-center mb-3">
+                                <a href="#" class="btn btn-info text-white rounded-3 py-1 px-2 text-center">
+                                    <i class="fa-solid fa-plus"></i>
+                                </a>
+                                <span class="text-dark">1</span>
+                                <a href="#" class="btn btn-info text-white rounded-3 py-1 px-2 text-center">
+                                    <i class="fa-solid fa-minus"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6 d-flex flex-column align-items-center justify-content-center rounded-start-4 border-0 shadow-lg">
+                        <div class="text-container">
+                            <h5 class="fw-semibold text-black">Rice Porridge</h6>
+                            <h6 class="fw-medium text-dark mt-3">Price: $25</h6>
+                            <div class="shoppingcart">
+                                <a href="#" class="btn btn-success text-white text-center py-2 px-3 rounded-3 mt-2">Buy now</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row border-0 shadow rounded-2 mt-5">
+                    <div class="col-6 pt-2 pb-3">
+                        <div class="image-container text-center mt-3">
+                            <img src="./images/Indian-starter-img-2.jpg" alt="add-cart-2" width="60" height="60" class="rounded-circle">
+                            <div class="add-minus d-flex justify-content-around align-items-center mt-2">
+                                <a href="#" class="btn btn-info text-white rounded-3 py-1 px-2 text-center">
+                                    <i class="fa-solid fa-plus"></i>
+                                </a>
+                                <span class="text-dark">1</span>
+                                <a href="#" class="btn btn-info text-white rounded-3 py-1 px-2 text-center">
+                                    <i class="fa-solid fa-minus"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6 d-flex flex-column align-items-center justify-content-center rounded-start-4 border-0 shadow-lg">
+                        <div class="text-container">
+                            <h5 class="fw-semibold text-success">Fruits Salad</h6>
+                            <h6 class="fw-medium text-dark mt-3">Price: $7.85</h6>
+                            <div class="shoppingcart">
+                                <a href="#" class="btn btn-secondary text-white text-center py-2 px-3 rounded-3 mt-2">Buy now</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row border-0 shadow rounded-2 mt-5">
+                    <div class="col-6 pt-3 pb-0">
+                        <div class="image-container text-center">
+                            <img src="./images/Chinese-starter-img-1.jpg" alt="add-cart-3" width="60" height="60" class="rounded-circle">
+                            <div class="add-minus d-flex justify-content-around align-items-center mt-2">
+                                <a href="#" class="btn btn-info text-white rounded-3 py-1 px-2 text-center">
+                                    <i class="fa-solid fa-plus"></i>
+                                </a>
+                                <span class="text-dark">1</span>
+                                <a href="#" class="btn btn-info text-white rounded-3 py-1 px-2 text-center">
+                                    <i class="fa-solid fa-minus"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6 py-3 d-flex flex-column align-items-center justify-content-center rounded-start-4 border-0 shadow-lg">
+                        <div class="text-container">
+                            <h5 class="fw-semibold text-info">Meats Grill</h6>
+                            <h6 class="fw-medium text-dark mt-3">Price: $15.99</h6>
+                            <div class="shoppingcart">
+                                <a href="#" class="btn btn-success text-white text-center py-2 px-3 rounded-3 mt-2">Buy now</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--end offcanvas cart-shopping-items-->
+   <!--end navbar-->
+   <!--header with bg-->
+   <section class="header_2 pt-lg-4 pt-xl-5 pt-5 pt-sm-5 pb-5 overflow-hidden" id="header_2">
+    <div class="container-fluid">
+      <div class="row px-md-5 px-3">
+        <div class="col-lg-6 border-0 d-flex flex-column">
+            <div class="text-container text-lg-center text-center mt-sm-2 my-xl-5">
+                <h3 class="h1 fw-bold text-white lh-base mt-0 w-100">Discover the Taste <br> of Excellence at <br><strong class="text-info">TASTY FOOD PALETTE</strong></h3>
+                <h5 class="mt-3 fw-semibold text-white lh-base small d-none d-sm-block w-75 mx-auto">
+                    Food restaurant are establishments where people can say a variety of meals prepared by professionals chefs and cooks. They range from fast food chains and casual dining spots to fine dining establishments, each offering a unique exoerience and menu.
+                </h5>
+                <a href="#indian-cuisine" class="btn btn-black text-white rounded-3 mt-xl-3 mt-4 py-2 px-3 h6 small fw-semibold border-0 outline-0 mt-2">Go to Grab <i class="fas fa-angle-double-right"></i></a>
+                <!--carousel
+                <div class="row mt-4">
+                    <div class="col-lg-11 col-xl-10 col-12 offset-0 offset-lg-0 d-flex justify-content-center
+                    justify-content-lg-start">
+                        <div class="carousel slide fade show border-0" id="carouselExample" data-bs-ride="carousel">
+                            <div class="carousel-indicators">
+                                <button type="button" class="active" data-bs-slide-to="0" data-bs-target="#carouselExample" aria-label="slide1" aria-current="true"></button>
+                                <button type="button" data-bs-slide-to="1" data-bs-target="#carouselExample" aria-label="slide2"></button>
+                                <button type="button" class="active" data-bs-slide-to="2" data-bs-target="#carouselExample" aria-label="slide3"></button>
+                            </div>
+                            <div class="carousel-inner rounded-5">
+                                <div class="carousel-item active carou-colo rounded-5">
+                                    <img src="./images/Special-non-veg-img-1.jpg" alt="indian-cuisine-carousel" class="d-block w-100" style="height:230px;">
+                                </div>
+                                <div class="carousel-item carou-colo">
+                                    <img src="./images/bg-img-9.jpg" alt="chinese-cuisine-carousel" class="d-block w-100 rounded-5" style="height:230px;">
+                                </div>
+                                <div class="carousel-item carou-colo">
+                                    <img src="./images/Thai-lunch-img-2.jpg" alt="thai-cuisine-carousel" class="d-block w-100 rounded-5" style="height:230px;">
+                                </div>
+                            </div>
+                            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon fw-bold"></span>
+                                 <span class="visually-hidden">Previous</span>
+                            </button>
+                            <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+                                <span class="carousel-control-next-icon fw-bold"></span>
+                                 <span class="visually-hidden">Next</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>-->
+            </div>
+        </div>
+        <div class="col-lg-6 border-0 d-flex justify-content-lg-end align-items-xl-center justify-content-center align-items-center px-5 main_bowl position-relative mt-5 mt-lg-0">
+            <img src="./images/chinese-lunch-main-img-3.png" class="position-relative border-0 d-none d-md-block img-fluid bowl-img" alt="main-img" height="430">
+            <!--<div class="leaf-image position-absolute top-25 start-50 translate-middle d-none d-lg-block">
+                <img src="./images/leaf-img.png" alt="leaf-image" width="150">
+            </div>-->
+            <div class="onion-image position-absolute top-75 start-100 translate-middle d-none d-lg-block">
+                <img src="./images/onion-img.png" alt="leaf-image" width="250">
+            </div>
+            <div class="leaf-image position-absolute top-100 start-100 translate-middle d-none d-xl-block">
+                <img src="./images/leaf-img.png" alt="leaf-image" width="150">
+            </div>
+            <div class="text-container content border-0 rounded-3 position-absolute py-3 pb-xl-5 px-3 top-100 start-lg-50 end-0 translate-middle d-none d-md-block" style="max-width:260px;">
+              <h6 class="text-info fw-bold">Tasty Food Palette</h6>
+              <h6 class="small text-white fw-semibold lh-base mt-2">Spicy and tasty, Organic, Healthy, Multi Cuisine, Ambience, Well experienced chefs and Friendly staff.</h6>
+            </div>
+            <div class="text-container d-none d-md-block content border-0 rounded-3 position-absolute py-2 px-3 top-25 start-0" style="max-width:260px;width:260px;">
+                <div class="left-content d-flex flex-row align-items-center justify-content-between">
+                    <div class="left-one d-flex flex-row align-items-center">
+                    <img src="./images/user-img-5.png" class="rounded-circle" alt="user-img" width="50" height="50">
+                    </div>
+                    <div class="right-one d-flex flex-flow align-items-center">
+                        <div class="rating">
+                         <i class="fa-solid fa-star text-warning small"></i>
+                         <i class="fa-solid fa-star text-warning small"></i>
+                         <i class="fa-solid fa-star text-warning small"></i>
+                         <i class="fa-solid fa-star-half-stroke text-warning small"></i>
+                         <span class="small h6 fw-bold text-secondary ms-2">4.1 Reviews</span>
+                        </div>
+                    </div>
+                </div>
+                <h6 class="small fw-semibold text-white lh-base text-center">
+                " The importance of the quality food in fostering happiness and well-being, to provide delicious, meals to customers." 
+                </h6>
+              </div>
+        </div>
+      </div>
+    </div>
+</section>
+   <!--end header with bg-->
+   <!--indian cuisine-->
+<section class="indian-cuisine m-lg-3 mt-5 mt-lg-6 mb-lg-3 mx-2 mx-md-1" id="indian-cuisine">
+    <div class="container-fluid">
+        <h3 class="text-dark text-capitalize text-center fw-bold">indian cuisine</h3>
+        <!--search input and nav-pills-->
+        <div class="row d-flex flex-column flex-lg-row">
+            <!--search input-->
+            <div class="col-md-8 offset-md-2 col-12 col-lg-4 offset-lg-0">
+                <div class="mt-4">
+                <form action="">
+                    <div class="input-group">
+                   <input type="text" class="form-control border-0 rounded-start-5 shadow-lg" placeholder="Search the Menu's">
+                   <span class="input-group-text rounded-end-5 border-0"><i class="fas fa-search text-primary"></i></span>
+                    </div>
+                </form>
+                </div>
+            </div>
+            <!--nav pills-->
+            <div class="col-md-8 offset-md-2 offset-lg-0 col-lg-8 mt-4 col-12">
+                <nav class="nav nav-pills float-lg-end d-flex flex-column d-lg-flex flex-lg-row nav-lg-justified">
+                    <a href="#breakfast" class="nav-link text-bg-info fw-semibold active">Breakfast</a>
+                    <a href="#special" class="nav-link text-info fw-semibold">Starter</a>
+                    <a href="#lunch" class="nav-link text-info fw-semibold">Lunch</a>
+                    <a href="#dinner" class="nav-link text-info fw-semibold">Dinner</a>
+                    <a href="#special" class="nav-link text-info fw-semibold">Dessert</a>
+                    <a href="#special" class="nav-link text-info fw-semibold">Drinks</a>
+                </nav>
+            </div>
+        </div>
+        <!--normal text-->
+        <div class="row">
+            <div class="col-md-7 offset-md-5">
+                <div class="mt-1 float-md-end float-start">
+                    <small class="fw-normal text-muted">You have <strong class="text-danger">2,000</strong> receipes to explore</small>
+                </div>
+            </div>
+        </div>
+        <!--cards with list group with badges-->
+        <div class="row d-flex flex-column flex-lg-row mt-3 mt-lg-4">
+          <div class="col-lg-2 offset-lg-0 col-md-6 offset-md-3 col-10 offset-1 col-sm-8 offset-sm-2 border-primary">
+                <h3 class="text-success fw-semibold mt-4 text-nowrap">
+                    Menu-Items
+                </h3>
+                <ul class="list-unstyled mt-4 d-flex flex-column gap-2">
+                    <li class="list-item text-capitalize h6 fw-semibold d-flex justify-content-between align-items-center text-center">
+                     vegetarian
+                     <span class="badge text-success rounded-pill bg-warning">11</span>
+                    </li>
+                    <li class="list-item text-capitalize h6 fw-semibold d-flex justify-content-between align-items-center text-start">
+                        Non-Vegetarian
+                        <span class="badge text-success rounded-pill bg-warning">15</span>
+                       </li>
+                       <hr>
+                       <li class="list-item text-capitalize h6 fw-semibold d-flex justify-content-between align-items-center text-center">
+                        Breakfast
+                        <span class="badge text-success rounded-pill bg-warning">3</span>
+                       </li>
+                       <li class="list-item text-capitalize h6 fw-semibold d-flex justify-content-between align-items-center text-center">
+                        Lunches
+                        <span class="badge text-success rounded-pill bg-warning">6</span>
+                       </li>
+                       <li class="list-item text-capitalize h6 fw-semibold d-flex justify-content-between align-items-center text-center">
+                        Dinner
+                        <span class="badge text-success rounded-pill bg-warning">3</span>
+                       </li>
+                       <li class="list-item text-capitalize h6 fw-semibold d-flex justify-content-between align-items-center text-center">
+                        Dessert
+                        <span class="badge text-success rounded-pill bg-warning">2</span>
+                       </li>
+                       <li class="list-item text-capitalize h6 fw-semibold d-flex justify-content-between align-items-center text-center">
+                        Drinks
+                        <span class="badge text-success rounded-pill bg-warning">7</span>
+                       </li>
+                       <hr>
+                       <li class="list-item text-capitalize h6 fw-semibold d-flex justify-content-between align-items-center text-center">
+                        Paneer
+                        <span class="badge text-success rounded-pill bg-warning">5</span>
+                       </li>
+                       <li class="list-item text-capitalize h6 fw-semibold d-flex justify-content-between align-items-center text-center">
+                        Mushroom
+                        <span class="badge text-success rounded-pill bg-warning">2</span>
+                       </li>
+                       <li class="list-item text-capitalize h6 fw-semibold d-flex justify-content-between align-items-center text-center">
+                        Tofu
+                        <span class="badge text-success rounded-pill bg-warning">3</span>
+                       </li>
+                       <li class="list-item text-capitalize h6 fw-semibold d-flex justify-content-between align-items-center text-center">
+                        Egg
+                        <span class="badge text-success rounded-pill bg-warning">4</span>
+                       </li>
+                       <li class="list-item text-capitalize h6 fw-semibold d-flex justify-content-between align-items-center text-center">
+                        Fish
+                        <span class="badge text-success rounded-pill bg-warning">6</span>
+                       </li>
+                       <li class="list-item text-capitalize h6 fw-semibold d-flex justify-content-between align-items-center text-center">
+                        Chicken
+                        <span class="badge text-success rounded-pill bg-warning">3</span>
+                       </li>
+                       <li class="list-item text-capitalize h6 fw-semibold d-flex justify-content-between align-items-center text-center">
+                        Beef
+                        <span class="badge text-success rounded-pill bg-warning">6</span>
+                       </li>
+                       <li class="list-item text-capitalize h6 fw-semibold d-flex justify-content-between align-items-center text-center">
+                        Biryani
+                        <span class="badge text-success rounded-pill bg-warning">3</span>
+                       </li>
+                       <hr>
+                       <li class="list-item text-capitalize h6 fw-semibold d-flex justify-content-between align-items-center text-center">
+                        Soup
+                        <span class="badge text-success rounded-pill bg-warning">3</span>
+                       </li>
+                       <li class="list-item text-capitalize h6 fw-semibold d-flex justify-content-between align-items-center text-center">
+                        Salad
+                        <span class="badge text-success rounded-pill bg-warning">4</span>
+                       </li>
+                       <li class="list-item text-capitalize h6 fw-semibold d-flex justify-content-between align-items-center text-center">
+                        Starters
+                        <span class="badge text-success rounded-pill bg-warning">3</span>
+                       </li>
+                       <li class="list-item text-capitalize h6 fw-semibold d-flex justify-content-between align-items-center text-center">
+                        Noodles
+                        <span class="badge text-success rounded-pill bg-warning">2</span>
+                       </li>
+                       <li class="list-item text-capitalize h6 fw-semibold d-flex justify-content-between align-items-center text-center">
+                        Fried Rice
+                        <span class="badge text-success rounded-pill bg-warning">3</span>
+                       </li>
+                       <li class="list-item text-capitalize h6 fw-semibold d-flex justify-content-between align-items-center text-center">
+                       Rice Bowl
+                        <span class="badge text-success rounded-pill bg-warning">4</span>
+                       </li>
+                       <li class="list-item text-capitalize h6 fw-semibold d-flex justify-content-between align-items-center text-center">
+                        Pasta
+                        <span class="badge text-success rounded-pill bg-warning">5</span>
+                       </li>
+                       <li class="list-item text-capitalize h6 fw-semibold d-flex justify-content-between align-items-center text-center">
+                        Smoothies
+                        <span class="badge text-success rounded-pill bg-warning">3</span>
+                       </li>
+                </ul>
+          </div>
+        <!--indian dishes-->
+        <div class="col-lg-9 offset-lg-1 col-sm-10 offset-sm-1 col-md-12 offset-md-0 col-12 offset-0 mt-4 mt-lg-0 shadow pb-md-5">
+            <!--indian cuisine breakfast-->
+            <div class="row mt-lg-5 mt-0 d-flex flex-column  flex-md-row py-4 py-lg-1" id="breakfast">
+                    <a class="text-decoration-none fw-bold text-uppercase text-black float-start h5 icon-link cursor-pointer icon-link-hover">Breakfast <i class="fa-solid fa-arrow-right"></i></a>
+                    <div class="col-lg-4 offset-lg-0 mt-md-5 md-lg-0 mt-5 col-9 offset-0 col-sm-8 offset-sm-2 col-md-4 offset-md-0 mx-auto mx-md-0">
+                        <div class="card border-0 shadow-lg h-100">
+                            <img src="./images/Indian-breakfast-img-1.jpg" alt="indian-breakfast-1" class="card-img-top" height="180">
+                            <div class="card-body">
+                                <div class="d-flex justify-content-between align-items-center text-center">
+                                  <h5 class="card-title fw-semibold">Idly Breakfast</h5>
+                                  <i class="fab fa-gratipay text-black"></i>
+                                </div>
+                                <h6 class="card-text fw-lighter small text-light lh-base"><strong>Ingedients: Idly, Sambar, Chutney and Vada.</strong></h6>
+                                <div class="card-subtitle mt-2 d-flex justify-content-around">
+                                    <span class="text-success small fw-semibold">433 CAL</span>
+                                    <span class="text-success small fw-semibold">42.5 P</span>
+                                    <span class="text-success small fw-semibold">42.7 E</span>
+                                </div>
+                            </div>
+                            <div class="card-footer d-flex flex-row align-items-center text-center justify-content-between">
+                                <span class="h5 fw-bold text-secondary">$10.5</span>
+                                <span class="text-decoration-line-through h6 fw-medium text-dark d-none d-sm-flex">$13</span>
+                               <a href="#" class="btn btn-danger ms-3 ms-md-2 text-nowrap px-3 py-1">Add Meal</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 offset-lg-0 mt-md-5 md-lg-0 mt-5 col-sm-8 offset-sm-2 offset-md-0 col-9 offset-0 col-md-4 offset-md-0 mx-auto mx-md-0">
+                        <div class="card border-0 shadow-lg h-100">
+                            <img src="./images/Indian-breakfast-img-2.jpg" alt="indian-breakfast-1" class="card-img-top" height="180">
+                            <div class="card-body">
+                                <div class="d-flex justify-content-between align-items-center text-center">
+                                  <h5 class="card-title fw-semibold">Puttu Kadalai</h5>
+                                  <i class="fab fa-gratipay text-black"></i>
+                                </div>
+                                <h6 class="card-text fw-lighter small text-light lh-base"><strong>Ingredients: Puttu, Kadalai gravy, Papadam, Banana.</strong></h6>
+                                <div class="card-subtitle mt-2 d-flex justify-content-around">
+                                    <span class="text-success small fw-semibold">427 CAL</span>
+                                    <span class="text-success small fw-semibold">40.3 P</span>
+                                    <span class="text-success small fw-semibold">47.1 E</span>
+                                </div>
+                            </div>
+                            <div class="card-footer d-flex align-items-center text-center justify-content-between">
+                                <span class="h5 fw-bold text-secondary">$12.4</span>
+                                <span class="text-decoration-line-through h6 fw-medium text-dark d-none d-sm-flex">$14</span>
+                               <a href="#" class="btn btn-danger ms-3 ms-md-2 text-nowrap px-3 py-1 fw-semibold text-white">Add Meal</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 offset-lg-0 mt-md-5 md-lg-0 mt-5 col-9 offset-0 col-sm-8 offset-sm-2 col-md-4 offset-md-0 mx-auto mx-md-0">
+                        <div class="card border-0 shadow-lg h-100">
+                            <img src="./images/Indian-breakfast-img-3.jpg" alt="indian-breakfast-3" class="card-img-top" height="180">
+                            <div class="card-body">
+                                <div class="d-flex justify-content-between align-items-center text-center">
+                                  <h5 class="card-title fw-semibold">Masala Dosa</h5>
+                                  <i class="fab fa-gratipay text-black"></i>
+                                </div>
+                                <h6 class="card-text fw-lighter small text-light lh-base"><strong>Ingedients: Masala Dosa, Sambar, Chuttney, Mint chutney.</strong></h6>
+                                <div class="card-subtitle mt-2 d-flex justify-content-around">
+                                    <span class="text-success small fw-semibold">419 CAL</span>
+                                    <span class="text-success small fw-semibold">38.0 P</span>
+                                    <span class="text-success small fw-semibold">46.3 E</span>
+                                </div>
+                            </div>
+                            <div class="card-footer d-flex align-items-center text-center justify-content-between">
+                                <span class="h5 fw-bold text-secondary">$9.15</span>
+                                <span class="text-decoration-line-through h6 fw-medium text-dark d-sm-flex d-none">$10</span>
+                               <a href="#" class="btn btn-danger ms-3 ms-md-2 text-nowrap px-3 py-1 fw-semibold text-white">Add Meal</a>
+                            </div>
+                        </div>
+                    </div>
+                    
+            </div>
+            <!--indian cuisine dinner-->
+            <div class="row mt-4 mt-lg-5" id="dinner">
+                <a class="text-decoration-none fw-bold text-uppercase text-success float-start h5 icon-link cursor-pointer icon-link-hover">Dinner <i class="fa-solid fa-arrow-right"></i></a>
+                 <div class="col-md-4 mt-7 col-md-4 offset-md-0 col-9 offset-0 col-sm-7 mx-auto">
+                    <div class="card position-relative h-100">
+                        <div class="image-container shadow mb-7 position-absolute overflow-hidden rounded-4 w-75 h-75 top-0 start-50 translate-middle">
+                          <img src="./images/Indian-dinner-img-1.jpg" alt="indian-dinner-1" class="w-100 rounded-4 h-100 card-img-top img-thumbnail object-fit-cover img-fluid">
+                        </div>
+                        <div class="card-body mt-lg-3 mt-xl-0">
+                            <h6 class="card-title fw-bolder lh-base text-secondary mt-6">
+                                Aloo Naan with Delicious Curd Chutney
+                            </h6>
+                            <span class="small mt-3 fw-normal card-text">Melted with <strong>Paneer Cubes</strong></span>
+                        </div>
+                        <div class="card-footer d-flex justify-content-between align-items-center">
+                            <span class="d-flex align-items-center text-center">
+                            <i class="fa-regular fa-comment text-danger"></i>
+                            <small class="text-success fw-normal ms-2">23</small>
+                        </span>
+                        <span class="d-flex align-items-center text-center">
+                            <i class="fa-regular fa-heart text-black"></i>
+                            <small class="text-success fw-normal ms-2">34</small>
+                        </span>
+                            
+                            <img src="./images/india-flag.png" alt="india-flag" width="30">
+                        </div>
+                    </div>
+                 </div>
+                 <div class="col-md-4 mt-7 col-md-4 offset-md-0 col-9 offset-0 col-sm-7 mx-auto">
+                    <div class="card position-relative h-100">
+                        <div class="image-container shadow top-0 start-50 translate-middle mb-7 position-absolute overflow-hidden rounded-4 w-75 h-75 text-center">
+                        <img src="./images/Indian-dinner-img-2.jpg" alt="indian-dinner-2" class="w-100 rounded-4 h-100 card-img-top img-thumbnail object-fit-cover img-fluid">
+                    </div>
+                        <div class="card-body mt-lg-3 mt-xl-0">
+                            <h6 class="card-title fw-bolder lh-base text-info mt-6">
+                                Spices Haryalic Chicken with Green Chillies
+                            </h6>
+                            <span class="small mt-3 fw-normal card-text">Garnished with <strong>Fried Onions</strong></span>
+                        </div>
+                        <div class="card-footer d-flex justify-content-between align-items-center">
+                            <span class="d-flex align-items-center text-center">
+                            <i class="fa-regular fa-comment text-danger"></i>
+                            <small class="text-success fw-normal ms-2">57</small>
+                        </span>
+                        <span class="d-flex align-items-center text-center">
+                            <i class="fa-regular fa-heart text-black"></i>
+                            <small class="text-success fw-normal ms-2">109</small>
+                        </span>
+                            
+                            <img src="./images/india-flag.png" alt="india-flag" width="30">
+                        </div>
+                    </div>
+                 </div>
+                 <div class="col-md-4  mt-7 col-md-4 offset-md-0 col-9 offset-0 col-sm-7 mx-auto">
+                    <div class="card position-relative h-100">
+                        <div class="image-container shadow top-0 start-50 translate-middle mb-7 position-absolute overflow-hidden rounded-4 w-75 h-75 text-center">
+                        <img src="./images/Indian-dinner-img-3.jpg" alt="indian-dinner-3" class="w-100 rounded-4 h-100 card-img-top img-thumbnail img-fluid object-fit-cover">
+                    </div>
+                        <div class="card-body mt-lg-3 mt-xl-0">
+                            <h6 class="card-title fw-bolder lh-base text-warning mt-6">
+                                Creamy Paneer, and Mushroom Gravy
+                            </h6>
+                            <span class="small mt-3 fw-normal card-text">Toppins with <strong>Tausted Mushrooms.</strong></span>
+                        </div>
+                        <div class="card-footer d-flex justify-content-between align-items-center">
+                            <span class="d-flex align-items-center text-center">
+                            <i class="fa-regular fa-comment text-danger"></i>
+                            <small class="text-success fw-normal ms-2">63</small>
+                        </span>
+                        <span class="d-flex align-items-center text-center">
+                            <i class="fa-regular fa-heart text-black"></i>
+                            <small class="text-success fw-normal ms-2">82</small>
+                        </span>
+                            
+                            <img src="./images/india-flag.png" alt="india-flag" width="30">
+                        </div>
+                    </div>
+                 </div>
+
+            </div>
+            <!--indian cuisine lunch--> 
+            <div class="row mt-5 d-flex flex-column flex-md-row flex-md-wrap" id="lunch">
+                    <a class="text-decoration-none fw-bold text-uppercase text-success float-start mb-lg-3 mb-2 h5 icon-link cursor-pointer icon-link-hover">Lunch <i class="fa-solid fa-arrow-right"></i></a>
+                 <div class="col-lg-4 offset-lg-0 mt-md-5 md-lg-0 mt-5 col-9 offset-0 col-sm-8 offset-sm-2 col-md-4 offset-md-0 mx-auto mx-md-0">
+                    <div class="card rounded-2 rounded-bottom-0 border-top-0 border-start-0 border-end-0 border-bottom border-info border-4 shadow overflow-hidden h-100">
+                        <img src="./images/Indian-lunch-veg-img-2.jpg" alt="indian-lunch-2" class="card-img-top" height="200">
+                        <div class="card-body text-center">
+                           <h5 class="fw-semibold card-title">Seafood Biryani</h5>
+                           <h6 class="fw-normal card-text text-light lh-base small">Biryani with Spices, Seafoods linke Fish, Prawns and Squid.</h6>
+                        </div>
+                        <div class="card-footer d-flex justify-content-between align-items-center">
+                            <span class="fw-semibold text-success">
+                                <i class="far fa-clock me-1"></i>
+                                30-45 min
+                            </span>
+                            <span class="fw-semibold text-black text-nowrap">
+                                <i class="fa-solid fa-fish me-1"></i>
+                               Non-Veg
+                            </span>
+                        </div>
+                    </div>
+                 </div>
+                 <div class="col-lg-4 offset-lg-0 mt-md-5 md-lg-0 mt-5 col-sm-8 offset-sm-2 offset-md-0 col-9 offset-0 col-md-4 offset-md-0 mx-auto mx-md-0">
+                    <div class="card rounded-2 rounded-bottom-0 border-top-0 border-start-0 border-end-0 border-bottom border-warning border-4 shadow overflow-hidden h-100">
+                        <img src="./images/Indian-lunch-img-1.jpg" alt="indian-lunch-1" class="card-img-top" height="200">
+                        <div class="card-body text-center">
+                           <h5 class="fw-semibold card-title">Vegetable Pulao</h5>
+                           <h6 class="fw-normal card-text text-light lh-base small">Vegetable Pulao with Spices and Fresh Vegetables and Ghee.</h6>
+                        </div>
+                        <div class="card-footer d-flex justify-content-between align-items-center">
+                            <span class="fw-semibold text-success">
+                                <i class="far fa-clock me-1"></i>
+                                15-20 min
+                            </span>
+                            <span class="fw-semibold text-info">
+                                <i class="fas fa-leaf me-1"></i></i>
+                                Vegetarian
+                            </span>
+                        </div>
+                    </div>
+                 </div>
+                 <div class="col-lg-4 offset-lg-0 mt-md-5 md-lg-0 mt-5 col-9 offset-0 col-sm-8 offset-sm-2 col-md-4 offset-md-0 mx-auto mx-md-0">
+                    <div class="card rounded-2 rounded-bottom-0 border-top-0 border-start-0 border-end-0 border-bottom border-success border-4 shadow overflow-hidden h-100">
+                        <img src="./images/Indian-lunch-img-3.jpg" alt="Indian-lunch-img-3" class="card-img-top" height="200">
+                        <div class="card-body text-center">
+                           <h5 class="fw-semibold card-title">Chicken Biryani</h5>
+                           <h6 class="fw-normal card-text text-light lh-base small">Chicken Biryani with Spices, Raita, Chicken and Egg.</h6>
+                        </div>
+                        <div class="card-footer d-flex justify-content-between align-items-center">
+                            <span class="fw-semibold text-success">
+                                <i class="far fa-clock me-1"></i>
+                                5-10 min
+                            </span>
+                            <span class="fw-semibold text-black text-nowrap">
+                                <i class="fa-solid fa-egg me-1"></i>
+                               Non-Veg 
+                            </span>
+                        </div>
+                    </div>
+                 </div>
+            </div>
+        </div>
+        </div>
+    </div>
+</section>
+   <!--end indian cuisine-->
+   <!--special-->
+<section class="special mt-5 mt-lg-6" id="special">
+    <h3 class="text-dark text-capitalize text-center fw-bold my-5">Our Special Menu's</h3>
+    <div class="container pb-4 shadow-lg">
+        <div class="row bg-success rounded-2 rounded-lg-pill d-flex flex-column flex-lg-row justify-content-center justify-content-md-start justify-content-lg-between">
+            <div class="col-12 col-md-3 text-center text-lg-start">
+                <div class="image-container d-flex align-items-center text-md-center">
+                    <img src="./images/food-logo-img.png" alt="food-logo-img" class="img-fluid" width="110">
+                    <a href="#index.html" class="navbar-brand fw-bold text-primary h4"><span class="h3 text-uppercase">Tasty</span> Food Palette</a>
+                </div>
+            </div>
+            <div class="col-12 offset-0 col-md-10 col-lg-8 offset-lg-0 offset-md-0 d-flex align-items-md-center text-md-center mt-4 mt-lg-0">
+               <nav class="nav nav-tabs ms-lg-auto d-flex flex-column ms-3 ms-sm-0 flex-md-row ms-start" id="special-nav-tabs" role="tablist">
+                <a href="#non-veg" class="nav-link fw-semibold text-secondary active" id="nav-nonveg-tab" data-bs-toggle="tab" 
+                data-bs-target="#nav-nonveg" type="button" aria-controls="nav-nonveg" aria-selected="true">Non-vegetarian</a>
+                <a href="#veg" class="nav-link fw-semibold text-secondary" id="nav-veg-tab" data-bs-toggle="tab" 
+                data-bs-target="#nav-veg" type="button" aria-controls="nav-veg" aria-selected="false">Vegetarian</a>
+                <a href="#starters" class="nav-link fw-semibold text-secondary" id="nav-starter-tab" data-bs-toggle="tab" 
+                data-bs-target="#nav-starter" type="button" aria-controls="nav-starter" aria-selected="false">Starters</a>
+                <a href="#desserts" class="nav-link fw-semibold text-secondary" id="nav-dessert-tab" data-bs-toggle="tab" 
+                data-bs-target="#nav-dessert" type="button" aria-controls="nav-dessert" aria-selected="false">Desserts</a>
+                <a href="#drinks" class="nav-link fw-semibold text-secondary" id="nav-drinks-tab" data-bs-toggle="tab" 
+                data-bs-target="#nav-drinks" type="button" aria-controls="nav-drinks" aria-selected="false">Drinks</a>
+               </nav>
+            </div>
+        </div>
+        <div class="tab-content" id="nav-tabcontent-one">
+            <!--special nonveg-nav tab content-->
+            <div class="show tab-pane fade active" id="nav-nonveg" role="tabpanel" tabindex="0">
+               <div class="row mt-4">
+                <div class="col-lg-8 offset-lg-2 col-11 col-md-9 offset-md-0 mx-auto offset-0">
+                  <div class="text-container mt-4">
+                    <h4 class="fw-semibold text-black text-center">Meat Lovers' Haven</h4>
+                    <small class="fw-medium my-3">At <strong class="fw-bolder text-info">TASTY FOOD PALETTE</strong>, we take pride in offerings diverse and delectable range of non-vegetarian dishes that cater to meat lover's paletes. Our menu is celebration of flavours, textyures, and culinery traditions from around the world, all centered around premium cuts of meat and seafood.</small>
+                    <a href="#non-veg" class="fw-semibold ms-3 text-danger link-offset-2">Explore all <i class="fa-solid fa-arrow-right-long"></i></a>
+                  </div>
+                </div>
+               </div>
+              <div class="row mt-lg-5 mt-5 mb-6 d-flex flex-column flex-md-row flex-md-wrap justify-content-lg-around  justify-content-md-evenly align-items-md-center border-0">
+                <div class="col-lg-3 offset-lg-1 offset-xl-0 col-9 col-sm-7 col-md-5 mx-lg-0 mx-auto mx-md-0 mt-4 ">
+                  <div class="card py-3 card-first border-0 shadow position-relative d-flex flex-row align-items-center justify-content-end justify-content-lg-between">
+                     <div class="image-container rounded-circle position-absolute top-50 translate-middle start-0">
+                        <img src="./images/Special-non-veg-img-1-bg.png" alt="non-veg-1" class="rounded-circle img-fluid" width="210">
+                     </div>
+                     <div class="text-container px-5">
+                        <h6 class=" fw-semibold small text-white lh-base ps-4">Fried Chicken with Tomato Sauce and mint coriander leaves.</h6>
+                     </div>
+                     <i class="fa-solid fa-bookmark text-info fa-2x position-absolute top-0 end-0"></i>
+                  </div>
+                </div>
+                <div class="col-lg-3 offset-lg-0 col-9 col-sm-7 col-md-5 mx-auto mx-lg-0 mx-md-0 mt-4 mt-lg-0">
+                    <div class="card card-second py-3 border-0 shadow position-relative d-flex flex-row align-items-center justify-content-end justify-content-lg-between">
+                       <div class="image-container rounded-circle position-absolute top-50 translate-middle start-0">
+                          <img src="./images/Chinese-dinner-img-1-special-non-veg.png" alt="non-veg-2" class="rounded-circle img-fluid" width="120">
+                       </div>
+                       <div class="text-container px-5">
+                          <h6 class=" fw-semibold small text-white lh-base ps-4">Chicken Kabab with Fried Onions and Lemons.</h6>
+                       </div>
+                       <i class="fa-solid fa-bookmark text-info fa-2x position-absolute top-0 end-0"></i>
+                    </div>
+                  </div>
+                  <div class="col-lg-3 offset-lg-0 col-9 col-sm-7 col-md-5 mx-auto mx-lg-0 mx-md-0 mt-4 mt-lg-0">
+                    <div class="card py-3 border-0 card-third shadow position-relative d-flex flex-row align-items-center justify-content-end justify-content-lg-between">
+                       <div class="image-container rounded-circle position-absolute top-50 translate-middle start-0">
+                          <img src="./images/Thai-starter-img-2.png" alt="non-veg-3" class="rounded-circle img-fluid" width="140" >
+                       </div>
+                       <div class="text-container px-5">
+                          <h6 class=" fw-semibold small text-white lh-base ps-4">Steak Fish Garnished with Melted Butter and Fried Onions.</h6>
+                       </div>
+                       <i class="fa-solid fa-bookmark text-info fa-2x position-absolute top-0 end-0"></i>
+                    </div>
+                  </div>
+              </div>
+            </div>
+        </div>
+        <div class="tab-content" id="nav-tabcontent-two">
+            <!--special veg-nav tab content-->
+            <div class="tab-pane fade" id="nav-veg" role="tabpanel" tabindex="0">
+                <div class="row mt-4">
+                    <div class="col-lg-8 offset-lg-2 col-11 col-md-9 offset-md-0 mx-auto offset-0">
+                      <div class="text-container mt-4">
+                        <h4 class="fw-semibold text-danger text-center">Veggie Vibrance</h4>
+                        <small class="fw-medium my-3">At <strong class="fw-bolder text-info">TASTY FOOD PALETTE</strong>, we celebrate the vibrant and diverse world of vegetarian cuisine. Our menu is testment to the creativity and flavors that can be achieved without meat, offering a delightful array of dishes that cater to all tests and preferences. Our commitement to freshness is in every bite.</small>
+                        <a href="#non-veg" class="fw-semibold ms-3 text-black link-offset-2 text-nowrap">Explore all <i class="fa-solid fa-arrow-right-long"></i></a>
+                      </div>
+                    </div>
+                </div> 
+                <div class="row mt-md-6 mt-5 mb-5">
+                    <div class="col-md-10 col-lg-10 offset-lg-1 offset-md-1 d-md-flex flex-md-row flex-md-wrap justify-content-md-evenly align-items-md-center col-12 offset-0">
+                        <div class="col-lg-3 col-8 col-sm-7 col-md-5 mx-auto offset-md-0 mt-md-0 mt-4">
+                            <div class="card card-one-starter positive-relative border-0">
+                                <img src="./images/Special-non-veg-img-3.jpg" alt="veg-img" class="card-img-top rounded-3" height="170">
+                                <div class="card-body text-center">
+                                    <h5 class="text-secondary fw-semibold card-subtitle h5">Rice with Jackfruit</h5>
+                                    <h4 class="fw-bold text-warning card-title h4 mt-2">$44.52</h4> 
+                                    <small class="fw-medium my-3">We prioritize whole foods and balanced receipes. ensuring that our meals are as nourishing as they are flavorful.</small><br>
+                                </div>  
+                                <a href="#" class="btn btn-warning text-dark border rounded-2 fw-semibold">Buy Now</a> 
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-8 col-sm-7 col-md-5 mx-auto offset-md-0 mt-md-0 mt-6">
+                            <div class="card card-two-starter positive-relative border-0">
+                                <img src="./images/bg-img-1-pink.jpg" alt="veg-img-3" class="card-img-top rounded-3" height="170">
+                                <div class="card-body text-center">
+                                    <h5 class="text-primary fw-semibold card-subtitle h5">Vegetable Fritters</h5>
+                                    <h4 class="fw-bold text-black card-title h4 mt-2">$23.68</h4> 
+                                    <small class="fw-medium my-3">Explore the exotic spices of India with our aromatic vegetable curry, savor the Mediterranean freshness in platter.</small>
+                                </div>
+                                <a href="#" class="btn btn-black text-white border rounded-2 fw-semibold">Buy Now</a>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-8 col-sm-7 col-md-5 mx-auto offset-md-0 mt-lg-0 mt-6 mt-md-6">
+                            <div class="card card-three-starter positive-relative border-0">
+                                <img src="./images/chinese-starter-img-3.jpg" alt="veg-img-2" class="card-img-top rounded-3" height="170">
+                                <div class="card-body text-center">
+                                    <h5 class="text-info fw-semibold card-subtitle h5">Mushroom Risotto</h5>
+                                    <h4 class="fw-bold text-secondary card-title h4 mt-2">$51.99</h4> 
+                                    <small class="fw-medium my-3">It's a savory stuffed bell pepper, a rich and creamy mushroom ristto, or a colourful quinoa salad, each dish is natural.</small>
+                                </div>
+                                <a href="#" class="btn btn-secondary text-white border rounded-2 fw-semibold">Buy Now</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="tab-content" id="nav-tabcontent-three">
+            <!--special starter-nav tab content-->
+            <div class="tab-pane fade" id="nav-starter" role="tabpanel" tabindex="0">
+                <div class="row mt-4">
+                    <div class="col-lg-8 offset-lg-2 col-11 col-md-9 offset-md-0 mx-auto offset-0">
+                        <div class="text-container mt-4">
+                          <h4 class="fw-semibold text-warning text-center">Appetizer Affair</h4>
+                          <small class="fw-medium my-3">At <strong class="fw-bolder text-info">TASTY FOOD PALETTE</strong>, Our selection of starters offers something for everyone, whether you're in the mood of something light and refreshing or rich and indulgent. Each dish is crafted with finest ingredients and a touch of culinery creativity, ensuring that every bite is delightful surprise.</small>
+                          <a href="#non-veg" class="fw-semibold ms-3 text-primary link-offset-2 text-nowrap">Explore all <i class="fa-solid fa-arrow-right-long"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="row mt-md-6 mt-5 mb-5 d-md-flex flex-md-row flex-md-wrap justify-content-md-around">
+                      <div class="col-md-4 col-10 offset-1 col-sm-8 offset-sm-2 offset-md-0">
+                        <div class="card border-0 shadow-lg overflow-hidden rounded-4">
+                            <img src="./images/Indian-starter-img-1.jpg" alt="indian-starter-1" class="rounded-circle mt-2 d-block mx-auto"
+                            width="100" height="100">
+                            <div class="card-body text-center">
+                                <h5 class="card-title fw-semibold">Grill Paneer</h5>
+                                <h6 class="card-text fw-medium small text-light lh-base">Our website is designed to offering a tasty starters.</h6>
+                                <span class="h5 fw-bold text-info">$19.15</span>
+                                <div class="mt-3 d-grid gap-2 d-md-flex  text-center justify-content-md-around"> 
+                                    <a href="#" type="button" class="btn btn-secondary fw-semibold py-1 px-3 rounded-3 text-white text-nowrap">Buy Now</a>
+                                    <a href="#" type="button" class="btn btn-success fw-semibold py-1 px-3 rounded-3 text-white text-nowrap">Add Cart</a>
+                                </div>
+                            </div>
+                        </div>
+                      </div>
+                      <div class="col-md-4 col-10 offset-1 col-sm-8 offset-sm-2 offset-md-0 mt-md-0 mt-5">
+                        <div class="card border-0 shadow overflow-hidden rounded-4">
+                            <img src="./images/Indian-starter-img-2.jpg" alt="indian-starter-2" class="rounded-circle mt-2 d-block mx-auto"
+                            width="100" height="100">
+                            <div class="card-body text-center">
+                                <h5 class="card-title fw-semibold">Fruits Veg Salads</h5>
+                                <h6 class="card-text fw-medium small text-light lh-base">Our website is designed to offering a tasty starters.</h6>
+                                <span class="h5 fw-bold text-info">$7.85</span>
+                                <div class="mt-3 d-grid gap-2 d-md-flex  text-center justify-content-md-around"> 
+                                    <a href="#" type="button" class="btn btn-secondary fw-semibold py-1 px-3 rounded-3 text-white text-nowrap">Buy Now</a>
+                                    <a href="#" type="button" class="btn btn-success fw-semibold py-1 px-3 rounded-3 text-white text-nowrap">Add Cart</a>
+                                </div>
+                            </div>
+                        </div>
+                      </div>
+                      <div class="col-md-4 col-10 offset-1 col-sm-8 offset-sm-2 offset-md-0 mt-md-0 mt-5">
+                        <div class="card border-0 shadow-lg overflow-hidden rounded-4">
+                            <img src="./images/Indian-starter-img-3.jpg" alt="indian-starter-3" class="rounded-circle mt-2 d-block mx-auto"
+                            width="100" height="100">
+                            <div class="card-body text-center">
+                                <h5 class="card-title fw-semibold ">Spicy Egg Burji</h5>
+                                <h6 class="card-text fw-medium small text-light lh-base">Our website is designed to offering a tasty starters.</h6>
+                                <span class="h5 fw-bold text-info">$21.50</span>
+                                <div class="mt-3 d-grid gap-2 d-md-flex  text-center justify-content-md-around"> 
+                                    <a href="#" type="button" class="btn btn-secondary fw-semibold py-1 px-3 rounded-3 text-white text-nowrap">Buy Now</a>
+                                    <a href="#" type="button" class="btn btn-success fw-medium py-1 px-3 rounded-3 text-white text-nowrap">Add Cart</a>
+                                </div>
+                            </div>
+                        </div>
+                      </div>
+                </div> 
+            </div>
+        </div>
+        <div class="tab-content" id="nav-tabcontent-four">
+            <!--special dessert-nav tab content-->
+            <div class="tab-pane fade " id="nav-dessert" role="tabpanel" tabindex="0">
+                <div class="row mt-4">
+                    <div class="col-lg-8 offset-lg-2 col-11 col-md-9 offset-md-0 mx-auto offset-0">
+                        <div class="text-container mt-4">
+                          <h4 class="fw-semibold text-secondary text-center">Endless Sweetness</h4>
+                          <small class="fw-medium my-3">At <strong class="fw-bolder text-info">TASTY FOOD PALETTE</strong>, classic desserts that bring comfort and nostalgia with creamy cheesecake, warm apple pie and velvety chocolate mousse.
+                        We believe that everyone should be able to enjoy a sweet treat. Our dessert includes dietary needs, gluten free, dairy free, vegan and low-sugar choices. </small>
+                          <a href="#non-veg" class="fw-semibold ms-3 text-success link-offset-2">Explore all <i class="fa-solid fa-arrow-right-long text-nowrap"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="row mt-md-6 mt-5 mb-5 d-md-flex flex-md-row flex-md-wrap justify-content-md-around">
+                    
+                       <div class="col-md-4 col-lg-3 col-8 offset-2 col-sm-8 offset-sm-2 offset-md-0">
+                        <div class="card border-0 shadow rounded-4">
+                            <div class="image-container rounded-4 p-2">
+                                <img src="./images/Indian-dessert-img-1.jpg" alt="dessert-img-1" class="card-img-top rounded-4" height="170">
+                            </div>
+                            <div class="text-container">
+                                <div class="col-12 d-flex justify-content-around align-items-center">
+                                    <h6 class="fw-semibold text-secondary">Saffron Kesari</h6>
+                                    <div class="d-flex align-items-baseline justify-content-center">
+                                     <i class="fa-solid fa-star text-warning me-2 small"></i>
+                                        <span class="text-black fw-semibold h6">4.7</span>
+                                    </div>
+                                </div>
+                                <div class="col-12 d-flex justify-content-around align-items-center my-2">
+                                    <div class="d-flex align-items-baseline">
+                                        <i class="fa-solid fa-location-dot small me-2"></i>
+                                        <span class="text-muted fw-semibold h6">2.3KM</span>
+                                    </div>
+                                    <h6 class="fw-bold text-success h5">$5.85</h6>
+                                </div>
+                                <div class="text-center mb-2">
+                                    <a href="#" class="btn btn-dark text-white fw-semibold py-1 px-5 rounded-2 text-center">Buy Now</a>
+                                  </div>
+                            </div>
+                        </div>
+                       </div>
+                       <div class="col-md-4 col-8 offset-2 col-lg-3 col-sm-8 offset-sm-2 offset-md-0 mt-5 mt-md-0">
+                        <div class="card  border-0 shadow rounded-4">
+                            <div class="image-container rounded-4 p-2">
+                                <img src="./images/Indian-dessert-img-2.jpg" alt="Indian-dessert-2" class="card-img-top rounded-4" height="170">
+                            </div>
+                            <div class="text-container">
+                                <div class="col-12 d-flex justify-content-around align-items-center">
+                                    <h6 class="fw-semibold text-danger">Rasa Malai</h6>
+                                    <div class="d-flex align-items-baseline justify-content-center">
+                                     <i class="fa-solid fa-star text-warning me-2 small"></i>
+                                        <span class="text-black fw-semibold h6">4.9</span>
+                                    </div>
+                                </div>
+                                <div class="col-12 d-flex justify-content-around align-items-center my-2">
+                                    <div class="d-flex align-items-baseline">
+                                        <i class="fa-solid fa-location-dot small me-2"></i>
+                                        <span class="text-muted fw-semibold h6">4.1KM</span>
+                                    </div>
+                                    <h6 class="fw-bold text-secondary h5">$5.85</h6>
+                                </div>
+                                <div class="text-center mb-2">
+                                  <a href="#" class="btn btn-dark text-white fw-semibold py-1 px-5 rounded-2 text-center">Buy Now</a>
+                                </div>
+                            </div>
+                        </div>
+                       </div>
+                       <div class="col-md-4 col-8 offset-2 col-lg-3 col-sm-8 offset-sm-2 offset-md-0 mt-5 mt-md-0">
+                        <div class="card  border-0 shadow rounded-4">
+                            <div class="image-container rounded-4 p-2">
+                                <img src="./images/Indian-dessert-img-3.jpg" alt="dessert-img-1" class="card-img-top rounded-4" height="170">
+                            </div>
+                            <div class="text-container">
+                                <div class="col-12 d-flex justify-content-around align-items-center">
+                                    <h6 class="fw-semibold text-secondary">Gulab Jamun</h6>
+                                    <div class="d-flex align-items-baseline justify-content-center">
+                                     <i class="fa-solid fa-star text-warning me-2 small"></i>
+                                        <span class="text-black fw-semibold h6">4.8</span>
+                                    </div>
+                                </div>
+                                <div class="col-12 d-flex justify-content-around align-items-center my-2">
+                                    <div class="d-flex align-items-baseline">
+                                        <i class="fa-solid fa-location-dot small me-2"></i>
+                                        <span class="text-muted fw-semibold h6">3.5KM</span>
+                                    </div>
+                                    <h6 class="fw-bold text-info h5">$9.99</h6>
+                                </div>
+                                <div class="text-center mb-2">
+                                    <a href="#" class="btn btn-dark text-white fw-semibold py-1 px-5 rounded-2 text-center">Buy Now</a>
+                                  </div>
+                            </div>
+                        </div>
+                       </div>
+                    
+                </div>
+            </div>
+        </div>
+        <div class="tab-content" id="nav-tabcontent-five">
+            <!--special drinks-nav tab content-->
+            <div class="tab-pane fade " id="nav-drinks" role="tabpanel" tabindex="0">
+                <div class="row mt-4">
+                    <div class="col-lg-8 offset-lg-2 col-11 col-md-9 offset-md-0 mx-auto offset-0">
+                        <div class="text-container mt-4">
+                          <h4 class="fw-semibold text-success text-center">Refreshing Sips</h4>
+                          <small class="fw-medium my-3">At <strong class="fw-bolder text-info">TASTY FOOD PALETTE</strong>, enhance your dessert experience with a perfect pairing from our drink menu. Our selection of dessert wines, speciality coffess, and artisanal teas provides the ideal complement to our sweet treats. Our staff can recommend the best beverages to creating memories. </small>
+                          <a href="#non-veg" class="fw-semibold ms-3 text-secondary link-offset-2 text-nowrap">Explore all <i class="fa-solid fa-arrow-right-long"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="row  mt-md-5 mt-5 mb-5 d-md-flex flex-md-row flex-md-wrap justify-content-md-evenly align-items-center">
+                    <div class="col-md-10 offset-md-0 d-md-flex flex-md-row justify-content-md-evenly flex-md-wrap align-items-md-center">
+                      <div class="col-md-4 col-lg-3 col-8 offset-2 col-lg-3 col-sm-8 offset-sm-2 offset-md-0">
+                        <div class="card shadow border-0">
+                            <div class="image-container">
+                                <img src="./images/Indian-drinks-img-1.jpg" alt="indian-drinks-1" class="card-img-top" height="200">
+                            </div>
+                            <div class="text-container my-3">
+                                <h6 class="fw-medium text-warning text-center">Tea</h6>
+                                <div class="mt-3 d-flex justify-content-around align-items-center">
+                                    <i class="fa-solid fa-bag-shopping text-secondary"></i>
+                                    <button class="btn text-dark btn-warning fw-semibold h6 py-1 px-3">PRICE: $7.25</button>
+                                    <i class="fa-solid fa-cart-shopping text-secondary"></i>
+                                </div>
+                            </div>
+                        </div>
+                      </div>
+                      <div class="col-md-4 col-lg-3 col-8 offset-2 col-lg-3 col-sm-8 offset-sm-2 offset-md-1 mt-5 mt-md-0">
+                        <div class="card border-0">
+                            <div class="image-container">
+                                <img src="./images/Indian-drinks-img-2.jpg" alt="indian-drinks-2" class="card-img-top" height="240">
+                            </div>
+                            <div class="text-container my-3">
+                                <h6 class="fw-medium text-warning text-center">Pomegrante Juice</h6>
+                                <div class="mt-3 d-flex justify-content-around align-items-center">
+                                    <i class="fa-solid fa-bag-shopping text-secondary"></i>
+                                    <button class="btn btn-secondary fw-semibold h6 py-1 px-3">PRICE: $7.25</button>
+                                    <i class="fa-solid fa-cart-shopping text-secondary"></i>
+                                </div>
+                            </div>
+                        </div>
+                      </div>
+                      <div class="col-md-4 col-lg-3 col-8 offset-2 col-lg-3 col-sm-8 offset-sm-2 offset-md-1 mt-5 mt-md-5 mt-lg-0">
+                        <div class="card border-0 shadow">
+                            <div class="image-container">
+                                <img src="./images/Indian-drinks-img-3.jpg" alt="indian-drinks-3" class="card-img-top" height="200">
+                            </div>
+                            <div class="text-container my-3">
+                                <h6 class="fw-medium text-danger text-center">Coffee</h6>
+                                <div class="mt-3 d-flex justify-content-around align-items-center">
+                                    <i class="fa-solid fa-bag-shopping text-secondary"></i>
+                                    <button class="btn btn-danger fw-semibold h6 py-1 px-3">PRICE: $7.25</button>
+                                    <i class="fa-solid fa-cart-shopping text-secondary"></i>
+                                </div>
+                            </div>
+                        </div>
+                      </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>   
+</section>
+   <!--end special-->
+   <!--dinning booking a table-->
+   <section class="dinning my-lg-5 mt-5 mt-lg-6" id="dinning">
+    <h3 class="text-dark text-capitalize text-center fw-bold mt-0 mb-4">Dinning Reservation</h3>
+     <div class="container-fluid mt-lg-6 mt-3">
+        <div class="row">
+            <div class="col-md-10 offset-md-1 col-12 offset-0 col-sm-10 offset-sm-1 flex-column d-flex flex-lg-row align-items-center">
+                <div class="col-lg-6 offset-lg-0 col-12 offset-0 col-sm-12 offset-sm-0 col-md-8 offset-md-0">
+                    <div class="card border-0 rounded-3 shadow py-2">
+                        <div class="card-body">
+                            <h5 class="card-title fw-bold text-success"><span class="text-primary text-uppercase fs-5">Tasty Food Palatte - </span> BOOK A TABLE</h5>
+                              <ul class="list-group mt-3">
+                                <li class="list-group-item border-0 d-flex flex-row gap-4 align-items-baseline">
+                                  <i class="fa-solid fa-square-check text-black"></i>
+                                  <span class="small fw-medium text-dark card-text lh-base fs-6">
+                                      Celebrate your milestones at <span class="text-danger fw-bold h6">TASTY FOOD PALETTE</span>
+                                      with our bespoke event planning services. We believe that every dinning experience should be unique and tailored to your needs. Making a reservation is quick and convenient with our online booking system.
+                                  </span>
+                                </li>
+                                <li class="list-group-item border-0 d-flex flex-row gap-4 align-items-baseline mt-2">
+                                    <i class="fa-solid fa-square-check text-black"></i>
+                                    <span class="small fw-medium text-dark card-text lh-base fs-6">
+                                        When you book a table, let us know if you're celebrating a special occasion, have diatry preferences, or require any special accommodations. Our team will go to the extra mile to ensure your visit is memorable and enjoyable.
+                                    </span>
+                                  </li>
+                            </ul>
+                            <div class="d-flex justify-content-center">
+                                <!--modal-->
+                            <a href="#" class="card-text btn btn-secondary h5 text-white fw-semibold mt-3 mx-auto" data-bs-toggle="modal" data-bs-target="#book_a_table">Book A Table</a>
+                            <!--end modal-->
+                        </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 offset-lg-2 col-md-10 offset-md-0 col-12 offset-0 position-relative mt-5 mt-lg-0">
+                    <div class="image-container rounded-4 d-flex justify-content-center position-relative ">
+                        <img src="./images/dinning-img.jpg" alt="dinning-img" height="480" class="rounded-4">
+                        <img src="./images/green-img.jpg" alt="dinning-green-sub-img" class="border-3 bg-white border rounded-circle img-thumbnail position-absolute top-0 start-0 translate-middle d-none d-lg-flex" width="90" height="90">
+                        <img src="./images/pink-betroot-img.jpg" alt="dinning-pink-sub-img" class="rounded-circle p-2 border border-3 bg-white position-absolute top-50 start-100 translate-middle d-none d-lg-flex" width="90" height="90">
+                        <img src="./images/dinning-yellow-img.jpg" alt="dinning-yellow-sub-img" class="border border-3 bg-white rounded-circle position-absolute top-100 start-50 translate-middle d-none d-lg-flex" width="90" height="90">
+                    </div>
+                </div>
+            </div>
+        </div>
+     </div> 
+     <!--modal-->
+     <div class="modal fade rounded-4 border-0" data-bs-backdrop="static" id="book_a_table" tabindex="-1">
+        <div class="modal-dialog rounded-4 border-0 shadow-none z-1">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <div class="modal-title h6 fw-semibold text-uppercase text-secondary">make your reservation today</div>
+                    <button class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="container">
+                        <div class="row d-flex align-items-center ">
+                            <div class="col-md-7 col-10 offset-1">
+                               <form action="">
+                                   <div class="mb-4">
+                                    <input type="text" class="form-control" placeholder="Enter the Name">
+                                   </div>
+                                   <div class="mb-4">
+                                    <input type="number" class="form-control" placeholder="Enter a valid number">
+                                   </div>
+                                   <div class="mb-4">
+                                    <select name="guest" id="guest" class="form-select">
+                                        <option value="one" selected>Number of guest</option>
+                                        <option value="two">2</option>
+                                        <option value="three">3</option>
+                                        <option value="four">4</option>
+                                        <option value="five">5</option>
+                                        <option value="six">6</option>
+                                        <option value="seven">7</option>
+                                        <option value="eight">8</option>
+                                        <option value="nine">9</option>
+                                        <option value="ten">10</option>
+                                        <option value="more than ten">More than 10</option>
+                                    </select>
+                                   </div>
+                                   <div class="mb-4">
+                                    <input type="datetime-local" class="form-control">
+                                   </div>
+                                   <div class="mb-0">
+                                    <textarea name="note" id="note" class="form-control" placeholder="special Note..."></textarea>
+                                   </div>
+                                </form>
+                            </div>
+                            <div class="col-md-4 d-none d-md-flex">
+                                <img src="./images/dinning-img-1.png" alt="dinning-img" height="350">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer d-md-flex flex-md-row justify-content-around">
+                    <!--toast button-->
+                   <button class="btn btn-info text-white py-2 px-4 rounded-3"
+                   id="toastbtn">
+                    Book Now
+                   </button>
+                   <!--end toast button-->
+                    <button class="btn btn-dark text-white rounded-3 py-2 px-4" data-bs-dismiss="modal" >Not Now</button>
+                </div>
+            </div>
+        </div>
+       </div>
+       <!--end modal-->
+       <!--toast notification-->
+       <div class="toast position-fixed top-0 start-0 ms-2 ms-sm-4">
+        <div class="toast-header">
+          <h6 class="me-auto">Welcome to <span class="h6 text-success fw-semibold">TASTY FOOD PALETTE</span></h6>
+          <button type="button" class="btn-close" data-bs-dismiss="toast"></button>
+        </div>
+        <div class="toast-body">
+          <h6 class="text-info lh-base fw-semibold lh-base">Your table has been booked successfully.</h6>
+          <h6 class="fw-semibold mt-2 small">
+          <a href="#contactus" class="fw-medium text-black">Click Here!</a> to contact our staff, if you have any queries.
+          <h6 class="mt-2 small">Thank You For Booking!</h6>
+        </h6>
+        </div>
+      </div>
+      <!--end toast notification-->
+      </div>
+    </section>
+   <!--end dinning booking a table-->
+   <!--service-->
+   <section class="services mt-lg-6 mt-5 mb-5" id="services">
+    <h3 class="text-dark text-capitalize text-center fw-bold mt-0 mb-4">Our Services</h3>
+    <div class="container mt-5 border-0 rounded-3 py-5 px-0 px-sm-5 px-md-0 service-container">
+        <div class="row">
+            <div class="col-md-10 offset-md-1 col-12 offset-0 d-sm-flex flex-sm-row justify-content-sm-around align-items-center">
+                <div class="col-md-5 offset-md-0 col-sm-6 offset-sm-0 col-10 offset-1">
+                    <div class="card card-service-one border-0 rounded-3 shadow position-relative">
+                        <div class="card-body pb-0">
+                           <ul class="list-unstyled">
+                            <li class="list-item d-flex flex-row align-items-center gap-4">
+                                <i class="fa-solid fa-utensils fa-2x text-info"></i>
+                                <d-flex class="flex-column">
+                                   <h5 class="fw-semibold text-warning h6">Dinning with Quality Food</h5>
+                                   <h6 class="fw-medium small mt-3 text-danger lh-base">Guest can also visit the restaurant to makes a reservation in person, which might be preferable for specific needs.</h6>
+                                </d-flex>
+                            </li>
+                           </ul> 
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-5 offset-md-0 col-sm-6 offset-sm-0 col-10 offset-1 mt-4 mt-sm-0 ms-sm-2 ms-md-0">
+                    <div class="card card-service-two position-relative border-0 rounded-3 shadow">
+                        <div class="card-body pb-0">
+                           <ul class="list-unstyled">
+                            <li class="list-item d-flex flex-row align-items-center gap-4">
+                                <i class="fas fa-mug-hot fa-2x text-info"></i>
+                                <d-flex class="flex-column">
+                                   <h5 class="fw-semibold text-warning h6">Hot Serving</h5>
+                                   <h6 class="fw-medium small mt-3 text-danger lh-base">Seamless communication between the kitchen staff and waitstaff use of warming drawers, heat lamps to keep food hot before served.</h6>
+                                </d-flex>
+                            </li>
+                           </ul> 
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row mt-4">
+            <div class="col-md-10 offset-md-1 col-12 offset-0 d-sm-flex flex-sm-row justify-content-sm-around ">
+                <div class="col-md-5 offset-md-0 col-sm-6 offset-sm-0 col-10 offset-1">
+                    <div class="card card-service-three position-relative border-0 rounded-3 shadow">
+                        <div class="card-body pb-0">
+                           <ul class="list-unstyled">
+                            <li class="list-item d-flex flex-row align-items-center gap-4">
+                                <i class="fas fa-users fa-2x text-success"></i>
+                                <d-flex class="flex-column">
+                                   <h5 class="fw-semibold text-warning h6">Customer Services</h5>
+                                   <h6 class="fw-medium small mt-3 text-danger lh-base">Staff should be well-informed about ingredients, preparing methods, able to make answer any questions and recommendations.</h6>
+                                </d-flex>
+                            </li>
+                           </ul> 
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-5 offset-md-0 col-sm-6 offset-sm-0 col-10 offset-1 mt-4 mt-sm-0 ms-sm-2 ms-md-0">
+                    <div class="card card-service-four position-relative border-0 rounded-3 shadow">
+                        <div class="card-body pb-0">
+                           <ul class="list-unstyled">
+                            <li class="list-item d-flex flex-row align-items-center gap-4">
+                                <i class="fas fa-box fa-2x text-success"></i>
+                                <d-flex class="flex-column">
+                                   <h5 class="fw-semibold text-warning h6">Ordering and Packing</h5>
+                                   <h6 class="fw-medium small mt-3 text-danger lh-base">Secure all containers with tamper-evident seals. Clearly label each container with its content, labels  and any special notes.
+                                   </h6>
+                                </d-flex>
+                            </li>
+                           </ul> 
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row mt-4">
+            <div class="col-md-10 offset-md-1 col-12 offset-0 d-sm-flex flex-sm-row justify-content-sm-around">
+                <div class="col-md-5 offset-md-0 col-sm-6 offset-sm-0 col-10 offset-1">
+                    <div class="card border-0 card-service-five position-relative rounded-3 shadow">
+                        <div class="card-body pb-0">
+                           <ul class="list-unstyled">
+                            <li class="list-item d-flex flex-row align-items-center gap-4">
+                                <i class="fas fa-truck fa-2x text-secondary"></i>
+                                <d-flex class="flex-column">
+                                   <h5 class="fw-semibold text-warning h6">Fast Shipping</h5>
+                                   <h6 class="fw-medium small mt-3 text-danger lh-base">
+                                    For pickup orders, notify the customer when their order is ready and ensure quick handover upon arrival with fastest shipping.
+                                   </h6>
+                                </d-flex>
+                            </li>
+                           </ul> 
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-5 offset-md-0 col-sm-6 offset-sm-0 col-10 offset-1 mt-4 mt-sm-0 ms-sm-2 ms-md-0">
+                    <div class="card card-service-six position-relative border-0 rounded-3 shadow">
+                        <div class="card-body pb-0">
+                           <ul class="list-unstyled">
+                            <li class="list-item d-flex flex-row align-items-center gap-4">
+                                <i class="fas fa-people-carry fa-2x text-secondary"></i>
+                                <d-flex class="flex-column">
+                                   <h5 class="fw-semibold text-warning h6">Free Delivery</h5>
+                                   <h6 class="fw-medium small mt-3 text-danger lh-base">The order is delivered to the customer within the estimated time frame, and to ensuring our minimal handling during transit.
+                                   </h6>
+                                </d-flex>
+                            </li>
+                           </ul> 
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+   </section>
+   <!--end service-->
+   <!--customer reviews-->
+<section class="customer-reviews mt-5 my-lg-6" id="customer-reviews">
+    <h3 class="text-dark text-capitalize text-center fw-bold mt-0 mb-4">Our Customer Reviews</h3>
+    <div class="container">
+    <div class="row my-5">
+        <div class="col-md-12 px-2">
+            <div id="customerReviewsCarousel" class="carousel slide">
+                <div class="carousel-indicators">
+                  <button type="button" data-bs-target="#customerReviewsCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                  <button type="button" data-bs-target="#customerReviewsCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                </div>
+                <div class="carousel-inner border-0 shadow-lg h-100 py-5">
+                  <div class="carousel-item active h-100">
+                    <div class="row">
+                    <div class="col-md-12 offset-md-0 col-lg-10 offset-lg-1 col-xl-10 offset-xl-1 flex-column d-md-flex justify-content-center flex-md-row justify-content-sm-start justify-content-lg-between col-sm-12 offset-0">
+                    <div class="col-md-4 col-10 offset-1 offset-md-0 col-lg-4">
+                        <div class="card ms-1 ms-md-0 border-0 shadow position-relative card-review-one">
+                            <div class="image-container rounded-circle position-absolute top-0 translate-middle start-50">
+                                <img src="./images/user-img-1.png" alt="non-veg-1" class="rounded-circle img-fluid" width="65">
+                             </div>
+                            <div class="card-body mt-5 mb-4">
+                            <div class="text-container text-center">
+                                <h5 class="fw-semibold text-black">Alex David</h5>
+                                <div class="reviews mt-3 d-flex justify-content-around align-items-center">
+                                    <div class="rating d-flex gap-1">
+                                        <span><i class="fa-solid fa-star text-white"></i></span>
+                                        <span><i class="fa-solid fa-star text-white"></i></span>
+                                        <span><i class="fa-solid fa-star text-white"></i></span>
+                                        <span><i class="fa-solid fa-star text-white"></i></span>
+                                        <span><i class="fa-solid fa-star-half-stroke text-white"></i></span>
+                                    </div>
+                                    <strong class="text-info">4.7 Reviews</strong>
+                                </div>
+                                <h6 class="small fw-medium mt-3 lh-base text-white">"Absolutely loved my experience at this restaurant!. The food was phenominal it was cooked to perfection. I"ll definitely be coming back"</h6>
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 offset-md-0 d-none d-md-flex col-lg-4">
+                        <div class="card  ms-1 ms-lg-3 card-review-two border-0 shadow position-relative">
+                            <div class="image-container rounded-circle position-absolute top-0 translate-middle start-50">
+                                <img src="./images/user-img-2.png" alt="non-veg-1" class="rounded-circle img-fluid" width="78">
+                             </div>
+                            <div class="card-body mt-5 mb-4">
+                            <div class="text-container text-center">
+                                <h5 class="fw-semibold text-secondary">Sree Devi Pon</h5>
+                                <div class="reviews mt-3 d-flex justify-content-around align-items-center">
+                                    <div class="rating d-flex gap-1">
+                                        <span><i class="fa-solid fa-star text-warning"></i></span>
+                                        <span><i class="fa-solid fa-star text-warning"></i></span>
+                                        <span><i class="fa-solid fa-star text-warning"></i></span>
+                                        <span><i class="fa-solid fa-star text-warning"></i></span>
+                                        <span><i class="fa-solid fa-star-half-stroke text-warning"></i></span>
+                                    </div>
+                                    <strong class="text-info">4.5 Reviews</strong>
+                                </div>
+                                <h6 class="small fw-medium mt-3 lh-base text-white">The service is always top-notch, and the food is out of the world. The desserts are amazing; - it's always tender and full of flavor.</h6>
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 offset-md-0 d-none d-md-flex col-lg-4">
+                        <div class="card ms-1 ms-lg-3 me-1 border-0 card-review-three shadow position-relative">
+                            <div class="image-container rounded-circle position-absolute top-0 translate-middle start-50">
+                                <img src="./images/user-img-3.png" alt="non-veg-1" class="rounded-circle img-fluid" width="70">
+                             </div>
+                            <div class="card-body mt-5 mb-4">
+                            <div class="text-container text-center">
+                                <h5 class="fw-semibold text-success">Manoj Elien</h5>
+                                <div class="reviews mt-3 d-flex justify-content-around align-items-center">
+                                    <div class="rating d-flex gap-1">
+                                        <span><i class="fa-solid fa-star text-warning"></i></span>
+                                        <span><i class="fa-solid fa-star text-warning"></i></span>
+                                        <span><i class="fa-solid fa-star text-warning"></i></span>
+                                        <span><i class="fa-solid fa-star text-warning"></i></span>
+                                        <span><i class="fa-solid fa-star text-warning"></i></span>
+                                    </div>
+                                    <strong class="text-info">5.0 Reviews</strong>
+                                </div>
+                                <h6 class="small fw-medium mt-3 lh-base text-white">Had an amazing dinner with my friends last weekend. The menu has a great variety of options, delicious. Thank you!.</h6>
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+                    </div>
+                   </div>
+                  </div>
+                  <div class="carousel-item">
+                    <div class="row">
+                    <div class="col-md-12 offset-md-0 col-lg-10 offset-lg-1 d-md-flex flex-md-row justify-content-between align-items-center border-5">
+                    <div class="col-md-4 col-10 offset-1 offset-md-0">
+                        <div class="card ms-1 card-review-four border-0 shadow position-relative shadow">
+                            <div class="image-container rounded-circle position-absolute top-0 translate-middle start-50">
+                                <img src="./images/user-img-4.png" alt="non-veg-1" class="rounded-circle img-fluid" width="70">
+                             </div>
+                            <div class="card-body mt-5 mb-4">
+                            <div class="text-container text-center">
+                                <h5 class="fw-semibold text-primary">Irian Maci</h5>
+                                <div class="reviews mt-3 d-flex justify-content-around align-items-center">
+                                    <div class="rating d-flex gap-1">
+                                        <span><i class="fa-solid fa-star text-warning"></i></span>
+                                        <span><i class="fa-solid fa-star text-warning"></i></span>
+                                        <span><i class="fa-solid fa-star text-warning"></i></span>
+                                        <span><i class="fa-solid fa-star text-warning"></i></span>
+                                        <span><i class="fa-solid fa-star-half-stroke text-warning"></i></span>
+                                    </div>
+                                    <strong class="text-info">4.5 Reviews</strong>
+                                </div>
+                                <h6 class="small fw-medium mt-3 lh-base text-white">"What a gem! The ambience is good.The staff was very accommodating sure we had everything we needed. Great place for any occasion!"</h6>
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 d-none d-md-flex">
+                        <div class="card  ms-1 ms-lg-3 border-0 shadow card-review-five position-relative">
+                            <div class="image-container rounded-circle position-absolute top-0 translate-middle start-50">
+                                <img src="./images/user-img-5.png" alt="non-veg-1" class="rounded-circle img-fluid" width="100">
+                             </div>
+                            <div class="card-body mt-5 mb-4">
+                            <div class="text-container text-center">
+                                <h5 class="fw-semibold text-success">Kacel Klairs</h5>
+                                <div class="reviews mt-3 d-flex justify-content-around align-items-center">
+                                    <div class="rating d-flex gap-1">
+                                        <span><i class="fa-solid fa-star text-warning"></i></span>
+                                        <span><i class="fa-solid fa-star text-warning"></i></span>
+                                        <span><i class="fa-solid fa-star text-warning"></i></span>
+                                        <span><i class="fa-solid fa-star text-warning"></i></span>
+                                        <span><i class="fa-solid fa-star-half-stroke text-warning"></i></span>
+                                    </div>
+                                    <strong class="text-info">4.7 Reviews</strong>
+                                </div>
+                                <h6 class="small fw-medium mt-3 lh-base text-white">I had the lamp chops, and they were divine. The atmosphere is warm and inviting, staff makes you feel right at home. Can't wait for my next visit!"</h6>
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 d-none d-md-flex">
+                        <div class="card  ms-1 ms-lg-3 me-1 border-0 shadow position-relative card-review-six">
+                            <div class="image-container rounded-circle position-absolute top-0 translate-middle start-50">
+                                <img src="./images/user-img-6.png" alt="non-veg-1" class="rounded-circle img-fluid" width="90">
+                             </div>
+                            <div class="card-body mt-5 mb-4">
+                            <div class="text-container text-center">
+                                <h5 class="fw-semibold text-black">Boston Dam</h5>
+                                <div class="reviews mt-3 d-flex justify-content-around align-items-center">
+                                    <div class="rating d-flex gap-1">
+                                        <span><i class="fa-solid fa-star text-warning"></i></span>
+                                        <span><i class="fa-solid fa-star text-warning"></i></span>
+                                        <span><i class="fa-solid fa-star text-warning"></i></span>
+                                        <span><i class="fa-solid fa-star text-warning"></i></span>
+                                        <span><i class="fa-solid fa-star text-warning"></i></span>
+                                    </div>
+                                    <strong class="text-info">5.0 Reviews</strong>
+                                </div>
+                                <h6 class="small fw-medium mt-3 lh-base text-white">"This place is a true culinery delight. The flavours are well-balanced, with care. I tried the special of the day it was just wow".</h6>
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+                    </div>
+                   </div>
+                  </div>
+                </div>
+                <button class="carousel-control-prev me-2" data-bs-target="#customerReviewsCarousel" data-bs-slide="prev" type="button">
+                   <span><i class="fa-solid fa-circle-arrow-left text-black fa-2x"></i></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                  <button class="carousel-control-next ms-2" data-bs-target="#customerReviewsCarousel" data-bs-slide="next" type="button">
+                    <span><i class="fa-solid fa-circle-arrow-right text-black fa-2x"></i></span>
+                    <span class="visually-hidden">Next</span>
+                  </button>
+              </div>
+        </div>
+    </div>
+    </div>
+</section>
+   <!--end customer reviews-->
+   <!--pagination-->
+   <div class="container-fluid mb-5">
+            <nav aria-label="page navigation example">
+                <ul class="pagination justify-content-center justify-content-lg-end">
+                    <li class="page-item">
+                        <a href="#" class="page-link disabled" aria-label="previous">
+                            <span aria-hidden="true"><i class="fa-solid fa-angles-left text-secondary"></i></span>
+                        </a>
+                    </li>
+                    <li class="page-item">
+                        <a href="index.html" class="page-link bg-info border-info fw-semibold text-white active">
+                            1
+                        </a>
+                    </li>
+                    <li class="page-item">
+                        <a href="chinese.html" class="page-link" >
+                            2
+                        </a>
+                    </li>
+                    <li class="page-item">
+                        <a href="thai.html" class="page-link" >
+                            3
+                        </a>
+                    </li>
+                    <li class="page-item">
+                        <a href="aboutus.html" class="page-link">
+                            4
+                        </a>
+                    </li>
+                    <li class="page-item">
+                        <a href="chinese.html" class="page-link">
+                            <span aria-hidden="true"><i class="fa-solid fa-angles-right text-secondary"></i></span>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+   </div>
+   <!--end-pagination-->
+    <!--footer-contact us-->
+    <footer class="contactus contact_img pt-4 pb-3 position-relative" id="contactus">
+        <img src="./images/lemon-footer-img.png" alt="strawberry-footer-img" class="position-absolute top-0 end-0" width="180">
+        <img src="./images/strawbery-footer-img.png" alt="lemon-footer-img" class="position-absolute top-0 start-0" width="180">
+      <div class="container-fluid position-relative">
+        <div class="row d-flex flex-lg-row flex-lg-wrap flex-column">
+        <div class="col-lg-12 col-xl-10 offset-xl-1 offset-lg-0 col-sm-10 offset-sm-1">
+        <div class="row">
+              <div class="col-lg-4 col-12 col-md-10 offset-md-1 offset-lg-0 text-center">
+                <h3 class="fw-semibold text-black fs-4 mb-4">Contact Us</h3>
+                <form action="">
+                 <div class="mb-4">
+                    <input type="text" name="name" id="name" class="form-control shadow rounded-3 border-0 py-2 px-4" placeholder="Enter Your Name">
+                 </div>
+                 <div class="mb-4">
+                    <input type="email" name="email" id="email" class="form-control shadow rounded-3 border-0 py-2 px-4" placeholder="Enter Your Email">
+                 </div>
+                 <div class="mb-4">
+                    <textarea name="textarea" id="textarea" class="form-control shadow rounded-3 border-0 py-3 px-4">Write a Query Here!</textarea>
+                 </div>
+                 <div class="mb-4">
+                    <input type="button" value="Submit" class="btn btn-info text-white fw-semibold rounded-4">
+                 </div>
+                </form>
+              </div>
+              <div class="col-lg-4 col-xl-5 col-md-10 offset-md-1 offset-lg-0">
+                <h3 class="fw-semibold text-black fs-4 mb-4 text-center">Tasty Food Palette</h3>
+                <h6 class="small fw-medium lh-base text-success text-center">At this restaurant, we are always eager to hear from our customers. Your feedbck is invaluable and helps us to continously improve.</h6>
+                <ul class="list-unstyled contact-list mt-3 mt-lg-4 d-flex gap-2 flex-column align-items-center justify-content-center flex-lg-row justify-content-lg-between flex-lg-wrap">
+                    <li class="list-item active"><a href="index.html" class="text-decoration-none text-info fw-semibold h6">Home</a></li>
+                    <li class="list-item"><a href="index.html" class="text-decoration-none text-info fw-semibold h6">Indian-Cuisine</a></li>
+                    <li class="list-item"><a href="chinese.html" class="text-decoration-none text-info fw-semibold h6">Chinese-Cuisine</a></li>
+                    <li class="list-item"><a href="thai.html" class="text-decoration-none text-info fw-semibold h6">Thai-Cuisine</a></li>
+                    <li class="list-item"><a href="index.html" class="text-decoration-none text-info fw-semibold h6">Special</a></li>
+                    <li class="list-item"><a href="index.html" class="text-decoration-none text-info fw-semibold h6">Dinning</a></li>
+                    <li class="list-item"><a href="index.html" class="text-decoration-none text-info fw-semibold h6">Services</a></li>
+                    <li class="list-item"><a href="aboutus.html" class="text-decoration-none text-info fw-semibold h6">About Us</a></li>
+                </ul>
+                <ul class="list-unstyled">
+                    <li class="list-item d-flex align-items-center">
+                        <i class="fa-solid fa-location-dot text-secondary me-3"></i>
+                        <h6 class="small fw-semibold text-danger lh-base">
+                            Tasty Food Palette Restaurant
+                            MNO street, RT State-754632.
+                        </h6>
+                    </li>
+                    <li class="list-item d-flex align-items-center">
+                        <i class="fa-solid fa-envelope text-secondary me-3"></i>
+                        <h6 class="small lh-base text-danger fw-semibold">
+                            tastyfoodpaletteres@gmail.com
+                        </h6>
+                    </li>
+                    <li class="list-item d-flex align-items-center">
+                        <i class="fa-solid fa-phone text-secondary me-3"></i>
+                        <h6 class="small fw-semibold lh-base text-danger">
+                            +0987654321
+                        </h6>
+                    </li>
+                </ul>
+                <div class="col-8 offset-2">
+                <ul class="list-unstyled mt-3 mb-4 rounded-2 shadow-lg d-flex justify-content-around py-2">
+                    <li class="list-item">
+                        <i class="fa-brands fa-facebook fa-2x text-success"></i>
+                    </li>
+                    <li class="list-item">
+                        <i class="fa-brands fa-instagram fa-2x text-black"></i>
+                    </li>
+                    <li class="list-item">
+                        <i class="fa-brands fa-twitter fa-2x text-info"></i>
+                    </li>
+                    <li class="list-item">
+                        <i class="fa-brands fa-linkedin fa-2x text-success"></i>
+                    </li>
+                </ul>
+            </div>
+              </div>
+              <div class="col-lg-4 col-xl-3 d-flex justify-content-xl-start">
+                <div class="image-container float-lg-end text-center">
+                    <img src="./images/Chinese-salad-img-3.png" alt="footer-img" height="300">
+                </div>
+              </div>
+            </div>
+        </div>
+        </div>
+    </div>
+    </footer>
+    <!--end footer contact us-->
+   <!--back to top btn-->
+   <button id="back-to-top" class="back-to-top-circle">
+    <i class="fa-solid fa-angles-up text-white"></i>
+   </button>
+  <!-- end back to top btn-->
+  <!--script starts-->
+   <script src="js/script.js"></script>
+   <script src="js/bootstrap.bundle.min.js"></script>
+   <script> 
+document.getElementById("toastbtn").onclick = function() {
+  var toastElList = [].slice.call(document.querySelectorAll('.toast'))
+  var toastList = toastElList.map(function(toastEl) {
+    return new bootstrap.Toast(toastEl)
+  })
+  toastList.forEach(toast => toast.show()) 
+}
+</script>   
+</body>
+</html>
