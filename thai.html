@@ -14,18 +14,18 @@
 </head>
 <style>
     body,html{
-        padding-top:40px;
+        padding-top:35px;
     }
 </style>
 <body>
-    <!--navbar-->
+    <!-- navbar-->
 <div class="container-fluid">
-    <nav class="navbar navbar-expand-xl bg-dark fixed-top py-xl-1 py-md-3 py-sm-2 py-lg-3 py-3 px-2">
+    <nav class="navbar navbar-expand-xl bg-dark fixed-top py-xl-1 py-md-3 py-lg-3 py-sm-3 py-2 px-3">
         <div class="container-fluid">
-            <nav aria-label="breadcrumb" class="my-auto about-breadcrumb">
-                <ol class="breadcrumb my-auto d-flex flex-column flex-sm-row">
+            <nav aria-label="breadcrumb" class="about-breadcrumb">
+                <ol class="py-0 mb-0 breadcrumb d-flex flex-sm-row flex-column align-items-start align-items-sm-center">
                    <li class="breadcrumb-item"><a href="index.html" class="text-decoration-none text-white fw-semibold">Home</a></li>
-                   <li class="breadcrumb-item"><a href="chinese.html" class="text-decoration-none text-white fw-semibold">Chinese-Cuisine</a></li>
+                   <li class="breadcrumb-item"><a href="chinese.html" class="text-decoration-none text-white fw-semibold ">Chinese-cuisine</a></li>
                    <li class="breadcrumb-item active"><a href="thai.html" class="fw-semibold text-warning link-offset-3">Thai-Cuisine</a></li>
                 </ol>
             </nav>
@@ -33,12 +33,12 @@
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div id="navbarExample" class="collapse navbar-collapse">
-                <div class="border-0 rounded-3 mt-2 mt-xl-0 shadow-xl shadow-0 d-flex flex-column bg-white mx-auto px-lg-4 flex-xl-row justify-content-xl-between align-items-xl-center py-2 justify-content-center align-items-center justify-content-md-start align-items-md-start px-xl-2 mt-md-3 mt-xl-0 d-md-inline-flex d-flex">
+                <div class="border-0 rounded-3 mt-2 mt-xl-0 shadow-xl shadow-0 d-flex flex-column bg-white mx-auto px-lg-4 flex-xl-row justify-content-xl-between align-items-xl-center py-2 justify-content-center align-items-center px-xl-2 mt-md-3 mt-xl-0 d-sm-inline-flex">
                     <a href="#index.html" class="navbar-brand fw-bold text-primary text-center">
                         <img src="./images/food-logo-img.png" alt="food-logo" class="img-fluid d-xl-none d-inline-block" width="100">
                         <span class="h5 text-uppercase">Tasty</span> Food Palette
                     </a>
-                   <ul class="nav navbar-nav d-lg-flex flex-lg-column flex-xl-row justify-content-between align-items-center ps-md-3">
+                   <ul class="nav navbar-nav d-lg-flex flex-lg-column flex-xl-row justify-content-between align-items-xl-center align-items-start ps-md-3">
                     <li class="nav-item active">
                         <a href="#thai-breakfast" class="nav-link text-success fw-semibold">Breakfast</a>
                     </li>
@@ -51,34 +51,35 @@
                     <li class="nav-item">
                         <a href="#thai-snacks" class="nav-link text-success fw-semibold">Snacks</a>
                     </li>
-                </ul>
+                   </ul>
                 </div>
-                <div class="ms-lg-auto my-3 d-flex flex-row flex-nowrap">
+                <div class="ms-lg-auto my-3 d-flex flex-row justify-content-sm-center flex-nowrap">
                     <a href="aboutus.html" class="btn btn-secondary text-white fw-semibold text-center">About Us</a>
-                <a href="#contactus" class="btn btn-info text-white fw-semibold text-center ms-lg-4 ms-2">Contact Us</a>
-            </div>
+                <a href="#contactus" class="btn btn-info text-white fw-semibold text-center ms-lg-3 ms-2">Contact Us</a>
+                </div>
             </div>
         </div>
     </nav>
 </div>
-   <!--end navbar-->
+   <!--end navbar -->
    <!--header with bg-->
-<section class="thai" id="thai">
+<section class="thai starter" id="thai">
         <!--carousel-->
-    <div class="container-fluid">
-    <div class="row border">
-    <div class="container-fluid">
-      <div id="carouselchinese" class="carousel slide" data-bs-ride="carousel">
-        <div class="carousel-inner rounded rounded-bottom-4 h-100 overflow-visible">
-            <div class="carousel-item active rounded rounded-bottom-4 chinese-item position-relative">
-                <img src="./images/Special-non-veg-img-1.jpg" alt="thai-cuisine" class="w-100 d-block" height="570">
-                <div class="carousel-caption position-absolute top-0 start-50 text-center translate-middle d-block w-50">
-                   <h4 class="fw-bold display-6"></h4>
+    <div class="container-fluid w-100">
+    <div class="row justify-content-center">
+        <div class="container-fluid">
+      <div id="carouselchinese" class="carousel slide thai-animations" data-bs-ride="carousel">
+        <div class="carousel-inner rounded rounded-bottom-4 h-100 w-100 overflow-visible">
+            <div class="carousel-item active rounded rounded-bottom-4 chinese-item position-relative w-100 h-100">
+                <img src="./images/Special-non-veg-img-1.jpg" alt="thai-cuisine-carousel" class="w-100 d-block" height="570">
+                <div class="carousel-caption position-absolute top-50 start-50 translate-middle d-block w-50 d-flex align-items-center justify-content-center">
+                   <h4 class="fw-bold display-4"></h4>
                 </div>
             </div>
-            <div class="carousel-item rounded rounded-bottom-4 chinese-item position-relative h-100">
-                <img src="./images/bg-img-9.jpg" alt="chinese-carousel" class="w-100 d-block" height="570">
-                <div class="carousel-caption position-absolute top-50 start-50 translate-middle d-block w-50">
+            <div class="carousel-item rounded rounded-bottom-4 chinese-item position-relative w-100 h-100">
+                <img src="./images/bg-img-9.jpg" alt="chinese-cuisine-carousel" class="w-100 d-block" height="570">
+                <div class="carousel-caption position-absolute top-50 start-50 translate-middle d-block w-50
+                 d-flex align-items-center justify-content-center">
                    <h4 class="fw-bold display-4"></h4>
                 </div>
             </div>
@@ -92,7 +93,6 @@
              <span class="visually-hidden">Next</span>
         </button>
        </div>
-    
     </div>
     </div>
        <!--end carousel-->
@@ -101,7 +101,7 @@
    <!--end header with bg--> 
    <!--thai breakfast-->
 <section class="thai-breakfast mt-lg-6 mt-5 mt-sm-6" id="thai-breakfast">
-    <div class="container-sm container-md">
+    <div class="container-sm container-md block scroll-section scroll-left">
         <div class="row">
             <div class="col-lg-9 offset-lg-1 col-md-12 offset-md-0">
                 <div class="row d-lg-flex flex-lg-row d-flex flex-md-row flex-md-wrap flex-column align-items-center justify-content-center">
@@ -121,7 +121,7 @@
         </div>
     </div>
     <!--thai breakfast-menu-->
-    <div class="container-fluid mt-6 mt-lg-6 mt-sm-5 container-sm">
+    <div class="container-fluid mt-6 mt-lg-6 mt-sm-5 container-sm block1 scroll-section scroll-right">
         <div class="row">
             <div class="col-lg-9 col-10 offset-1 col-sm-12 col-md-12 offset-md-0 offset-sm-0 offset-lg-0 py-lg-4 pt-2 pb-5 py-sm-4 thai-breakmenu thai-break-container rounded-3 rounded-2 shadow-lg d-flex flex-column flex-sm-row flex-sm-wrap flex-md-row flex-md-nowrap flex-lg-nowrap">
                 <div class="row d-flex flex-column flex-sm-row flex-sm-wrap flex-md-row justify-content-sm-center gap-sm-5 align-items-sm-center flex-md-nowrap gap-0 gap-md-5 gap-lg-5 justify-content-md-center align-items-md-center align-items-lg-start justify-content-lg-center flex-lg-nowrap px-lg-0 mx-sm-auto mx-md-auto mx-lg-auto">
@@ -176,7 +176,7 @@
    <!--end thai breakfast-->
    <!--thai lunch-->
    <section class="thai-lunch mt-5 mt-sm-6 mt-lg-7" id="thai-lunch">
-    <div class="container">
+    <div class="container block scroll-section scroll-left">
         <div class="row">
             <div class="col-lg-10 offset-lg-1 col-12 offset-0 col-md-12 offset-md-0">
                 <div class="row d-lg-flex flex-lg-row d-md-flex flex-md-row align-items-center flex-column">
@@ -196,7 +196,7 @@
         </div>
     </div>
     <!--thai lunch menu-->
-    <div class="container mt-6 mt-md-6">
+    <div class="container mt-6 mt-md-6 block1 scroll-section scroll-right">
         <div class="row d-flex flex-column flex-md-row justify-content-md-center justify-content-lg-start">
             <div class="col-lg-10 offset-lg-1 col-10 offset-1 col-sm-10 offset-sm-1 col-md-12 offset-md-0">
                 <div class="row d-flex flex-column flex-md-row flex-md-wrap justify-content-md-center align-items-md-center">
@@ -294,7 +294,7 @@
    <!--end thai lunch-->
    <!--thai dinner-->
    <section class="thai-dinner mt-5 mt-lg-7 mt-sm-6 mt-md-6" id="thai-dinner">
-    <div class="container-sm container-md">
+    <div class="container-sm container-md block scroll-section scroll-left">
         <div class="row">
             <div class="col-lg-10 offset-lg-1 col-12 offset-0 col-md-12 offset-md-0">
                 <div class="row d-flex flex-lg-row flex-column align-items-center flex-md-row">
@@ -314,7 +314,7 @@
         </div>
     </div>
     <!--thai dinner menu-->
-    <div class="container mt-lg-7 mt-5 mt-md-6 mb-md-0">
+    <div class="container mt-lg-7 mt-5 mt-md-6 mb-md-0 block1 scroll-section scroll-right">
         <div class="row">
            <div class="col-lg-10 offset-lg-1 col-10 offset-1 col-md-12 offset-md-0">
             <div class="row d-flex flex-column flex-lg-row justify-content-center align-items-center align-items-lg-start justify-content-lg-start flex-md-row flex-md-wrap">
@@ -351,7 +351,7 @@
             </div>
            </div>
         </div>
-        <div class="container-fluid mt-lg-6 mt-4 mt-md-5">
+        <div class="container-fluid mt-lg-6 mt-4 mt-md-5 scroll-section scroll-left">
         <div class="row">
            <div class="col-lg-12 col-10 col-sm-12 offset-sm-0 offset-1 col-md-12 offset-md-0">
                 <div class="row d-flex flex-column flex-lg-row flex-md-row flex-md-wrap flex-lg-nowrap">
@@ -444,7 +444,7 @@
    <!--end thai dinner-->
    <!--thai snacks-->
    <section class="thai-snacks mt-lg-6 mt-4 mt-sm-5 mt-md-4" id="thai-snacks">
-    <div class="container-sm">
+    <div class="container-sm block scroll-section scroll-left">
         <div class="row d-flex flex-column flex-lg-row justify-content-center align-items-center justify-content-lg-start align-items-lg-start flex-md-row flex-md-wrap">
             <div class="col-lg-5 col-12 col-md-4 thaisnacksimg d-flex justify-content-center justify-content-lg-start align-items-lg-center">
                 <img src="./images/thai-snacks-main-img.png" alt="thai-snacks-main" class="img-fluid">
@@ -533,7 +533,7 @@
    </section>
    <!--end thai snacks-->
    <!--pagination-->
-<div class="container-fluid my-6">
+<div class="container-fluid my-6 block1 scroll-section scroll-right">
     <nav aria-label="page navigation example">
         <ul class="pagination pagination-md pagination justify-content-lg-end justify-content-center">
             <li class="page-item">
@@ -578,7 +578,7 @@
         <div class="row d-flex flex-lg-row flex-lg-wrap flex-column">
         <div class="col-lg-12 col-xl-10 offset-xl-1 offset-lg-0 col-sm-10 offset-sm-1">
         <div class="row">
-              <div class="col-lg-4 col-12 col-md-10 offset-md-1 offset-lg-0 text-center border">
+              <div class="col-lg-4 col-12 col-md-10 offset-md-1 offset-lg-0 text-center border-0">
                 <h3 class="fw-semibold text-black fs-4 mb-4">Contact Us</h3>
                 <form action="">
                  <div class="mb-4">
@@ -595,7 +595,7 @@
                  </div>
                 </form>
               </div>
-              <div class="col-lg-4 col-xl-5 border col-md-10 offset-md-1 offset-lg-0">
+              <div class="col-lg-4 col-xl-5 border-0 col-md-10 offset-md-1 offset-lg-0">
                 <h3 class="fw-semibold text-black fs-4 mb-4 text-center">Tasty Food Palette</h3>
                 <h6 class="small fw-medium lh-base text-success text-center">At this restaurant, we are always eager to hear from our customers. Your feedbck is invaluable and helps us to continously improve.</h6>
                 <ul class="list-unstyled contact-list mt-3 mt-lg-4 d-flex gap-2 flex-column align-items-center justify-content-center flex-lg-row justify-content-lg-between flex-lg-wrap">
@@ -660,8 +660,8 @@
 <!--back to top btn-->
 <button id="back-to-top" class="back-to-top-circle">
     <i class="fa-solid fa-angles-up text-white"></i>
-   </button>
-   <!--end back to top btn-->
+</button>
+  <!-- end back to top btn-->
    <!--scripts starts-->
     <script src="js/script.js"></script>
     <script src="js/bootstrap.bundle.min.js"></script>

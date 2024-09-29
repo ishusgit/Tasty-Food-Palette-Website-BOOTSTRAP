@@ -17,19 +17,19 @@
     --bs-popover-body-bg:teal;
 }
     </style>-->
-    <style>
+     <style>
         body,html{
             padding-top:40px;
-        }
+        } 
     </style>
 </head>
 <body>
     <!--navbar-->
 <div class="container-fluid">
-    <nav class="navbar navbar-expand-xl bg-dark fixed-top py-xl-1 py-md-2 py-sm-2 py-3 px-2">
+    <nav class="navbar navbar-expand-xl bg-dark fixed-top py-xl-1 py-md-2 py-lg-3 py-sm-2 py-2 px-3">
         <div class="container-fluid">
             <nav aria-label="breadcrumb" class="my-auto about-breadcrumb">
-                <ol class="breadcrumb my-auto d-flex flex-row ms-2 ms-lg-0">
+                <ol class="breadcrumb my-auto d-flex flex-row ms-0 ms-lg-0">
                    <li class="breadcrumb-item"><a href="index.html" class="text-decoration-none text-white fw-semibold">Home</a></li>
                    <li class="breadcrumb-item active"><a href="chinese.html" class="fw-semibold text-warning link-offset-3">Chinese-Cuisine</a></li>
                 </ol>
@@ -70,26 +70,26 @@
    <!--header with bg-->
 <section class="starter" id="starter">
         <!--carousel-->
-    <div class="container-fluid">
-    <div class="row border-0">
-    <div class="container-fluid">
-      <div id="carouselchinese" class="carousel slide" data-bs-ride="carousel">
-        <div class="carousel-inner rounded rounded-bottom-4 h-100 overflow-visible">
-            <div class="carousel-item active rounded rounded-bottom-4 chinese-item position-relative h-100">
+    <div class="container-fluid w-100">
+    <div class="row justify-content-center">
+      <div class="container-fluid">
+      <div id="carouselchinese" class="carousel slide carousel-animations" data-bs-ride="carousel">
+        <div class="carousel-inner rounded rounded-bottom-4 overflow-visible w-100 h-100">
+            <div class="carousel-item active rounded rounded-bottom-4 chinese-item position-relative h-100 w-100">
                 <img src="./images/bg-img-9.jpg" alt="chinese-carousel" class="w-100 d-block" height="480">
                 <div class="carousel-caption position-absolute top-50 start-50 translate-middle d-block w-50">
                    <h4 class="fw-bold display-4"></h4>
                 </div>
                 <div class="container-fluid">
                 <div class="row position-absolute top-100 start-50 border-0 translate-middle mx-auto d-block d-flex flex-md-row flex-md-wrap justify-content-md-around starter flex-column">
-                    <div class="col-lg-4 col-12  offset-0 col-sm-8 offset-sm-2 col-md-6 offset-md-0">
+                    <div class="col-lg-4 col-12 offset-0 col-sm-8 offset-sm-2 col-md-6 offset-md-0">
                         <div class="card position-relative h-100 border-0 rounded-3 card-cstarter-one">
                             <div class="row g-0">
                                 <div class="col-4 col-md-4">
                                     <img src="./images/Chinese-soup-img-2.png" alt="chinese-soup-1" width="125" class="position-absolute top-50 start-0 translate-middle-y">
                                 </div>
                                 <div class="col-sm-7 col-8 offset-sm-1 offset-0 col-md-7 offset-md-1">
-                                   <div class="card-body ms-sm-0 ms-3">
+                                   <div class="card-body ms-sm-0 ms-4">
                                       <h5 class="card-title fw-semibold text-info lh-base">Creamy Soup</h5>
                                       <h6 class="card-subtitle fw-medium text-white">Cream, Chicken</h6>
                                       <h6 class="small lh-base fw-medium text-white card-text mt-2 d-none d-sm-block">The broth is rich and aromatic, medical benefits spices, herbs.</h6>
@@ -121,7 +121,7 @@
                                     <img src="./images/green-img.jpg" alt="chinese-soup-2" width="90" class="rounded-circle position-absolute top-50 start-0 translate-middle-y ms-sm-4 ms-3 ms-lg-3 ms-xl-3">
                                 </div>
                                 <div class="col-sm-7 col-8 offset-sm-1 offset-0 col-md-7 offset-md-1">
-                                    <div class="card-body ms-sm-0 ms-3 pt-5 pb-5 pt-sm-0 pt-md-2 pb-md-2 pb-lg-0 pt-lg-5 pt-xl-2 pb-xl-0 pb-sm-0 pb-md-0 pt-0">
+                                    <div class="card-body ms-sm-0 ms-4 pt-4 pb-4 pt-sm-0 pt-md-2 pb-md-2 pb-lg-0 pt-lg-3 pt-xl-2 pb-xl-0 pb-sm-0 pb-md-0 pt-0">
                                         <h5 class="card-title fw-semibold text-info">Minty Soup</h5>
                                         <h6 class="card-subtitle fw-medium text-white">Curd, Herbs</h6>
                                         <h6 class="small lh-base fw-medium text-danger card-text mt-2 d-none d-sm-block">Delicious to and mushroom, tofu with spices help boost immunity.</h6>
@@ -150,16 +150,18 @@
              <span class="visually-hidden">Next</span>
         </button>
        </div>
+      
     
-    </div>
-    </div>
+    
        <!--end carousel-->
+    </div>
+    </div>
     </div>
 </section>
    <!--end header with bg-->
    <!--chinese-lunch-->
    <section class="chinese-lunch mt-md-8 mt-8" id="chinese-lunch">
-   <div class="container-fluid">
+   <div class="container-fluid block1 scroll-section scroll-right">
     <div class="row d-flex flex-column flex-md-row">
         <div class="col-lg-10 border-0 col-12 offset-0 col-md-10 offset-md-1 offset-lg-1">
             <div class="row d-flex flex-column justify-content-center align-items-center d-lg-flex flex-md-row align-items-md-center justify-content-md-around">
@@ -179,7 +181,7 @@
     </div>
    </div>
    <!--lunch menu-->
-<div class="container-fluid mt-5 mt-md-6 mt-lg-7">
+<div class="container-fluid mt-5 mt-md-6 mt-lg-7 block scroll-section scroll-left">
     <div class="row d-xl-flex justify-content-xl-center align-items-xl-center chinese-lunch-container py-5 shadow">
         <div class="col-lg-12 offset-lg-0 col-10 offset-1 col-sm-12 offset-sm-0 col-md-10 offset-md-1 col-xl-10 offset-xl-0">
             <div class="row border-0 mx-lg-auto d-flex flex-column flex-sm-row flex-sm-wrap justify-content-sm-around align-items-sm-center justify-content-lg-betweeen align-items-center justify-content-center">
@@ -258,8 +260,8 @@
    </section>
    <!--end chinese-lunch-->
    <!--chinese-dinner-->
-   <section class="chinese-dinner mt-5 mt-md-6 mt-lg-7 mt-xl-5 border-0" id="chinese-dinner">
-   <div class="container border-0 mb-8 mb-sm-0">
+ <section class="chinese-dinner mt-5 mt-md-6 mt-lg-7 mt-xl-5 border-0" id="chinese-dinner">
+   <div class="container border-0 mb-8 mb-sm-0 block1 scroll-section scroll-right">
     <div class="row border-0 d-lg-flex flex-lg-row justify-content-center align-items-center">
         <div class="col-lg-5 col-12 offset-0 col-sm-12 offset-sm-0 border-0">
           <div class="text-container px-2">
@@ -334,7 +336,7 @@
     </div>
    </div>
    <!--dinner-menu-->
-   <div class="container mt-8 mt-sm-6">
+   <div class="container mt-8 mt-sm-6 block scroll-section scroll-left">
     <div class="row shadow rounded-2 chinese-dinner-container pt-6 pb-5">
         <div class="col-lg-10 offset-lg-1 col-xl-8 offset-xl-2 col-12 offset-0 border-0 col-sm-12 offset-0 col-md-12 offset-md-0">
            <div class="row d-flex flex-sm-row flex-sm-wrap justify-content-sm-around align-items-sm-center">
@@ -389,11 +391,11 @@
     
    </div>
    <!--end dinner-menu-->
-   </section>
+   </section> 
    <!--end chinese-dinner-->
    <!--chinese-drinks-->
    <section id="chinese-drinks" class="chinese-drinks border-0 mt-6 mt-md-6">
-    <div class="container-fluid border-0">
+    <div class="container-fluid border-0 block1 scroll-section scroll-right">
         <div class="row border-0">
             <div class="col-lg-10 offset-lg-1 col-12 offset-0 col-sm-12 offset-sm-0 col-md-12 offset-md-0 border-0">
                 <div class="row d-flex flex-column justify-content-center align-items-center flex-md-row flex-md-wrap align-items-center justify-content-md-around">
@@ -413,7 +415,7 @@
         </div>
     </div>
     <!--drinks-menu-->
-    <div class="container-fluid mt-5">
+    <div class="container-fluid mt-5 block scroll-section scroll-left">
         <div class="row border-0 shadow">
             <div class="col-lg-12 offset-lg-0 col-xl-10 offset-xl-1 col-12 offset-0 col-sm-12 offset-sm-0 col-md-12 offset-md-0">
                 <div class="row d-flex flex-column align-items-center justify-content-center flex-sm-row flex-sm-wrap justify-content-sm-center align-items-sm-center justify-content-md-around justify-content-lg-start justify-content-xl-between">
@@ -473,7 +475,7 @@
    </section>
    <!--end chinese-drinks-->
    <!--pagination-->
-<div class="container-fluid my-6">
+<div class="container-fluid my-6 block1 scroll-section scroll-right">
     <nav aria-label="page navigation example">
         <ul class="pagination justify-content-lg-end">
             <li class="page-item">

@@ -18,17 +18,17 @@
             --bs-tooltip-max-width:225px;
         }
         body,html{
-            padding-top:45px;
+            padding-top:35px;
         }
     </style>
 </head>
 <body>
     <!--navbar-->
 <div class="container-fluid mx-0 w-100">
-    <nav class="navbar navbar-expand-xl navbar-dark bg-dark fixed-top py-xl-1 py-md-2 py-sm-2 py-2 px-2 ">
+    <nav class="navbar navbar-expand-xl navbar-dark bg-dark fixed-top py-xl-1 py-lg-2 py-md-3 py-sm-3 py-2 px-2">
         <div class="container-fluid">
-            <nav aria-label="breadcrumb" class="my-auto about-breadcrumb">
-                <ol class="breadcrumb d-flex flex-column flex-sm-row my-auto">
+            <nav aria-label="breadcrumb" class="about-breadcrumb">
+                <ol class="breadcrumb py-0 mb-0 py-sm-3 d-flex flex-column flex-sm-row">
                    <li class="breadcrumb-item"><a href="index.html" class="text-decoration-none text-white fw-semibold">Home</a></li>
                    <li class="breadcrumb-item"><a href="chinese.html" class="text-decoration-none text-white fw-semibold">Chinese-Cuisine</a></li>
                    <li class="breadcrumb-item"><a href="thai.html" class="fw-semibold text-decoration-none text-white">Thai-Cuisine</a></li>
@@ -71,11 +71,11 @@
 </div>
    <!--end navbar-->
    <!--header-->
-   <section class="about mt-0" id="about">
-    <div class="container-fluid border-0 bg-warning rounded-3 position-realtive">
+   <section class="about mt-0 py-5 py-sm-0" id="about">
+    <div class="container-fluid border-0 bg-warning rounded rounded-bottom-3 rounded-top-0 position-realtive pe-md-0">
         <div class="row g-0">
            <div class="col-lg-4 offset-lg-1 col-sm-10 offset-sm-1 offset-md-2 col-md-8 bg-info col-12">
-               <div class="text-container py-4 px-3">
+               <div class="text-container py-4 px-3 main-animations">
                 <h3 class="text-center fw-bold lh-base">About
                 <span class="text-primary">TASTY Food Palatte</span></h3>
                 <h6 class="text-white mt-4 small lh-base">
@@ -94,15 +94,15 @@
                 </div>
                </div>
            </div>
-           <div class="col-lg-7 col-12 rounded-end-3 about-img position-relative float-lg-end">
-                <img src="./images/bg-img-5.jpg" alt="about-main-img" class="img-fluid w-100 h-100 about-img">
+           <div class="col-lg-7 col-12 rounded-end-3 about-img position-relative float-lg-end main-images">
+                <img src="./images/bg-img-5.jpg" alt="about-main-img" class="img-fluid w-100 h-auto about-img">
            </div>         
         </div>
     </div>
    </section>
    <!--end-header-->
    <!--our-aim-->
-   <section class="our-aim mt-lg-6 mt-5" id="our-aim">
+   <section class="our-aim mt-lg-6 mt-5 block1 scroll-section scroll-right" id="our-aim">
     <div class="container">
         <div class="row">
             <div class="col-12 text-center">
@@ -158,7 +158,7 @@
    </section>
    <!--end our-aim-->
    <!--how to work-->
-   <section class="working mt-lg-6 mt-5" id="working">
+   <section class="working mt-lg-6 mt-5 block scroll-section scroll-left" id="working">
     <div class="row">
         <div class="col-12">
             <h4 class="text-center text-dark fw-bold">How It Works?</h4>
@@ -243,7 +243,7 @@
    </section>
    <!--end how to work-->
    <!--our chefs-->
-   <section class="our-chefs mt-6 mt-lg-6" id="our-chefs">
+   <section class="our-chefs mt-6 mt-lg-6 block1 scroll-section scroll-right" id="our-chefs">
     <div class="container">
         <div class="row">
             <div class="col-12">
@@ -352,7 +352,7 @@
    </section>
    <!--end our chefs-->
    <!--why choosing us-->
-   <section class="our-choose mt-6" id="our-choose">
+   <section class="our-choose mt-6 block scroll-section scroll-left" id="our-choose">
     <div class="container border-0">
         <div class="row">
             <div class="col-12">
@@ -446,7 +446,7 @@
    </section>
    <!--end why choosing us-->
    <!--FAQ's-->
-   <section class="faq mt-5 mt-lg-6" id="faq">
+   <section class="faq mt-5 mt-lg-6 block1 scroll-section scroll-right" id="faq">
     <div class="container container-md">
         <div class="row">
             <div class="col-12">
@@ -535,7 +535,7 @@
    </section>
    <!--end FAQ's-->
    <!--rating and location-->
-   <section class="rating mt-lg-6 mt-5" id="rating">
+   <section class="rating mt-lg-6 mt-5 block scroll-section scroll-left" id="rating">
     <div class="container">
         <div class="row">
             <div class="col-12">
@@ -656,7 +656,7 @@
    </section>
    <!--end rating and location-->
    <!--pagination-->
-<div class="container-fluid my-6">
+<div class="container-fluid my-6 block1 scroll-section scroll-right">
     <nav aria-label="page navigation example">
         <ul class="pagination pagination-md pagination justify-content-lg-end justify-content-center">
             <li class="page-item">
@@ -693,6 +693,11 @@
     </nav>
 </div>
 <!--end-pagination-->
+<!--back to top btn-->
+<button id="back-to-top" class="back-to-top-circle">
+    <i class="fa-solid fa-angles-up text-white"></i>
+   </button>
+<!--end back to top btn-->
    <!--footer-contact us-->
    <footer class="contactus contact_img pt-4 pb-3 position-relative" id="contactus">
     <img src="./images/lemon-footer-img.png" alt="strawberry-footer-img" class="position-absolute top-0 end-0" width="180">
@@ -780,11 +785,6 @@
 </div>
 </footer>
 <!--end footer contact us-->
-<!--back to top btn-->
-<button id="back-to-top" class="back-to-top-circle">
-    <i class="fa-solid fa-angles-up text-white"></i>
-   </button>
-<!--end back to top btn-->
 
 
 
