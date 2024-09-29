@@ -33,7 +33,6 @@ body,html{
     opacity:1;
     transform: translateX(0);
 }
-
 //animation-part
 //header-text-container animation
 .main-animations{
@@ -1219,7 +1218,25 @@ background:rgb(0, 156, 161);
     min-height:100%;
     }
 }
-
+//scroll animation
+@media (max-width:991px){
+    //scroll-section triggered animation
+.scroll-section{
+    opacity:0;
+    transform:translateX(-90%);
+    transition: transform 1s ease, opacity 1s ease;
+}
+.scroll-right{
+    transform:translate(10%);
+}
+.scroll-left{
+    transform:translateX(-10%);
+}
+.scroll-section.visible{
+    opacity:1;
+    transform: translateX(0);
+}
+}
 
 
 

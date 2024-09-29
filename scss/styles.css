@@ -1281,6 +1281,23 @@ body, html {
     min-height: 100%;
   }
 }
+@media (max-width: 991px) {
+  .scroll-section {
+    opacity: 0;
+    transform: translateX(-90%);
+    transition: transform 1s ease, opacity 1s ease;
+  }
+  .scroll-right {
+    transform: translate(10%);
+  }
+  .scroll-left {
+    transform: translateX(-10%);
+  }
+  .scroll-section.visible {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
 /**@media (max-width:991px){
     .navbar{
         padding:20px auto;
