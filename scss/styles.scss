@@ -21,14 +21,14 @@ body,html{
 .scroll-section{
     opacity:0;
     transform:translateX(-50%);
-    transition: transform 1s ease, opacity 1s ease;
+    transition: transform 2s ease, opacity 2s ease;
 }
 .scroll-right{
-    transform:translate(50%);
+    transform:translate(50%);  
 }
 .scroll-left{
     transform:translateX(-50%);
-}
+ }
 .scroll-section.visible{
     opacity:1;
     transform: translateX(0);
@@ -51,6 +51,7 @@ body,html{
 // //header-main-image animation
 .main-images{
     animation:main-image 1s linear;
+    // overflow:visible;
 }
 @keyframes main-image{
     0%{
@@ -65,6 +66,8 @@ body,html{
 // //chinese-thai-carousel animation
 .carousel-animations{
     animation:carousel-animation 1s linear;
+    overflow:visible;
+    // overflow:visible;
 }
 @keyframes carousel-animation{
     0%{
@@ -79,6 +82,7 @@ body,html{
 //thai-acrousel animation
 .thai-animations{
     animation:thai-animation 1s linear;
+    // overflow:visible;
 }
 @keyframes thai-animation{
     0%{
@@ -600,30 +604,33 @@ background:rgb(0, 156, 161);
     background-size:cover;
     background-repeat:no-repeat;
 }
-/**back to top btn**/
-.back-to-top-circle{
-    position:fixed;
-    z-index:200000;
-    bottom:20px;
-    right:20px;
-    width:52px;
-    height:52px;
-    border-radius:50%;
-    border:none;
-    outline:none;
-    background:rgb(57, 2, 66);
-    text-align:center;
-    opacity:0;
-    cursor:pointer;
-    transition: all 0.6s ease-in-out;
-    &:hover{
-       background:rgb(255, 38, 107);
-       transform: translateY(-9px);
+//back-to-top btn
+ .back-to-top-circle{
+       position:fixed;
+        z-index:1000000;
+        bottom:15px;
+        right:20px;
+        width:50px;
+        height:50px;
+        border-radius:50%;
+        color:white;
+        border:none;
+        outline:none;
+        background:rgb(57,2,66);
+        text-align:center;
+        opacity:1;
+        cursor:pointer;
+        transition: all 0.6s ease-in-out;
+        &:hover{
+           background:rgb(255, 20, 83);
+           transform: translateY(-9px);
     }
-}
-.show{
-    opacity:1;
-}
+    }
+    .show{
+        opacity:1;
+        display:block;
+        visibility:visible;
+    }
 /**start mediA query**/
 @media (min-width:450px){
     body,html{
